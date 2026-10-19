@@ -1,20 +1,23 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-19T21:16:25+02:00",
+ "genere": "2026-10-19T23:12:50+02:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": null,
- "pluie_mm": 0.2,
+ "pluie_mm": 0.0,
+ "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
    "nom": "Marche jusqu'à Issy-Val-de-Seine",
@@ -26,7 +29,7 @@
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -35,7 +38,14 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 5,
+    "temp": 12,
+    "vent": 14,
+    "picto": "soleil"
+   }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
@@ -52,24 +62,9 @@
    "couleur": "#8a8f98"
   }
  ],
- "detail": [],
- "prochains": [
-  {
-   "h": "21:17",
-   "dest": "Versailles Château Rive Gauche"
-  },
-  {
-   "h": "21:21",
-   "dest": "Juvisy"
-  },
-  {
-   "h": "21:31",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
-  },
-  {
-   "h": "21:33",
-   "dest": "Versailles Château Rive Gauche"
-  }
+ "detail": [
+  "Trafic interrompu entre Austerlitz et Javel."
  ],
- "notifier": false
+ "prochains": [],
+ "notifier": true
 }

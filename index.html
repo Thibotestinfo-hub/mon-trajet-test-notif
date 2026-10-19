@@ -14,95 +14,122 @@
 <style>
   :root{
     --fond:#0e1013; --carte:#181b20; --carte2:#1f2328;
-    --trait:#2b3038; --texte:#f2f4f7; --doux:#9aa3ae;
-    --ok:#2ec27e; --ko:#e2231a; --pluie:#5291ce; --ambre:#f5a524;
-    --bleu:#3b82f6; --r:16px;
+    --trait:#2b3038; --texte:#f2f4f7; --doux:#9aa3ae; --faible:#5c646f;
+    --ok:#2ec27e; --ko:#e2231a; --eau:#5291ce; --ambre:#f5a524; --bleu:#3b82f6;
+    --r:16px;
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;padding:0}
   body{
     background:var(--fond); color:var(--texte);
     font:400 17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    padding:max(16px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom));
+    padding:max(14px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom));
     max-width:560px; margin:0 auto; -webkit-font-smoothing:antialiased;
   }
-  header{display:flex;align-items:baseline;justify-content:space-between;
-         gap:12px;margin:8px 0 18px}
-  h1{font-size:15px;font-weight:600;letter-spacing:.02em;margin:0;color:var(--doux)}
-  .maj{font-size:13px;color:var(--doux);font-variant-numeric:tabular-nums}
+  h1{font-size:13px;font-weight:650;letter-spacing:.08em;margin:6px 0 16px;
+     color:var(--faible);text-transform:uppercase}
 
   .bloc{background:var(--carte);border:1px solid var(--trait);
-        border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+        border-radius:var(--r);overflow:hidden;margin-bottom:14px}
   .bande{height:4px;background:var(--ok)}
   [data-statut="perturbe"] .bande{background:var(--ko)}
   [data-statut="amont"]    .bande{background:var(--ambre)}
-  [data-statut="pluie"]    .bande{background:var(--pluie)}
+  [data-statut="pluie"]    .bande{background:var(--eau)}
   .dedans{padding:20px}
 
-  .titre{font-size:25px;line-height:1.2;font-weight:650;letter-spacing:-.02em;margin:0 0 4px}
-  .sous{color:var(--doux);font-size:14px;margin:0}
-  .corps{white-space:pre-wrap;margin:16px 0 0;font-size:16px}
-  .corps:empty{display:none}
-
-  /* ── partir avant ────────────────────────────────────────── */
-  .partir{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--trait)}
-  .partir .ligne{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
-  .partir .h{font-size:30px;font-weight:650;letter-spacing:-.02em;
-             font-variant-numeric:tabular-nums}
-  .partir .h.off{font-size:19px;color:var(--doux)}
-  .partir .pour{font-size:14px;color:var(--doux)}
-  .partir .pour b{color:var(--texte);font-weight:600}
-
-  .arbitrage{margin:16px 0 0;padding:14px 16px;border-radius:12px;
-             background:rgba(245,165,36,.10);border:1px solid rgba(245,165,36,.3)}
-  .arbitrage b{display:block;font-size:12px;font-weight:600;color:var(--ambre);
-               text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
-
-  details.detail{margin:16px 0 0;font-size:14px;color:var(--doux)}
-  details.detail summary{cursor:pointer;font-weight:600}
-  details.detail p{margin:10px 0 0}
-
   /* ── je pars ─────────────────────────────────────────────── */
-  #jepars-bloc .dedans{padding:18px 20px 20px}
   .gros-bouton{font:inherit;font-size:19px;font-weight:650;border:0;
     border-radius:13px;padding:17px;background:var(--bleu);color:#fff;
     width:100%;cursor:pointer;letter-spacing:.01em}
-  .gros-bouton:active{opacity:.8}
+  .gros-bouton:active{opacity:.75}
+  .lieu{display:flex;align-items:center;justify-content:space-between;
+        gap:10px;margin-bottom:13px}
+  .lieu .ou{font-size:13px;color:var(--doux)}
+  .lieu .ou b{color:var(--texte);font-weight:600}
+  .bascule{font:inherit;font-size:12px;font-weight:600;color:var(--doux);
+    background:var(--carte2);border:1px solid var(--trait);border-radius:8px;
+    padding:5px 10px;cursor:pointer;white-space:nowrap}
   .verdict{margin:16px 0 0;display:none}
   .verdict.vu{display:block}
   .verdict .top{font-size:27px;font-weight:650;letter-spacing:-.02em;line-height:1.2}
   .verdict .top.urgent{color:var(--ambre)}
   .verdict .ctx{color:var(--doux);font-size:14px;margin-top:6px;
                 font-variant-numeric:tabular-nums}
-  .verdict .suite{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
-  .verdict .puce{background:var(--carte2);border:1px solid var(--trait);
-    border-radius:9px;padding:6px 11px;font-size:14px;
-    font-variant-numeric:tabular-nums;color:var(--doux)}
-  .theorique{font-size:12px;color:#5c646f;margin-top:12px}
+  .verdict .ctx b{color:var(--texte)}
+  .suite{margin-top:12px;display:flex;gap:7px;flex-wrap:wrap}
+  .puce{background:var(--carte2);border:1px solid var(--trait);border-radius:9px;
+        padding:5px 10px;font-size:13px;font-variant-numeric:tabular-nums;
+        color:var(--doux)}
+  .menu{font-size:12px;color:var(--faible);margin-top:12px}
 
-  /* ── le trajet ───────────────────────────────────────────── */
+  /* ── bulletin ────────────────────────────────────────────── */
+  .titre{font-size:25px;line-height:1.2;font-weight:650;letter-spacing:-.02em;
+         margin:0 0 5px}
+  .sous{color:var(--doux);font-size:13.5px;margin:0}
+  .sous{line-height:1.7}
+  .sous span.bloc-t{white-space:nowrap}
+  .sep{color:var(--faible);margin:0 7px}
+
+  .consigne{margin:18px 0 0;padding:16px 18px;border-radius:13px;
+            background:var(--carte2);border:1px solid var(--trait)}
+  .consigne .gd{font-size:28px;font-weight:650;letter-spacing:-.025em;
+                line-height:1.15;font-variant-numeric:tabular-nums}
+  .consigne .pour{font-size:14px;color:var(--doux);margin-top:3px}
+  .consigne .pour b{color:var(--texte);font-weight:600}
+  .consigne .alt{font-size:14px;color:var(--doux);margin-top:9px;
+                 padding-top:9px;border-top:1px solid var(--trait);
+                 font-variant-numeric:tabular-nums}
+  .consigne .alt b{color:var(--texte);font-weight:600}
+
+  .corps{white-space:pre-wrap;margin:16px 0 0;font-size:16px}
+  .corps:empty{display:none}
+  .arbitrage{margin:14px 0 0;padding:14px 16px;border-radius:12px;
+             background:rgba(245,165,36,.10);border:1px solid rgba(245,165,36,.3)}
+  .arbitrage b{display:block;font-size:12px;font-weight:600;color:var(--ambre);
+               text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+  details.detail{margin:14px 0 0;font-size:14px;color:var(--doux)}
+  details.detail summary{cursor:pointer;font-weight:600;list-style:none}
+  details.detail summary::-webkit-details-marker{display:none}
+  details.detail summary::before{content:"› ";color:var(--faible)}
+  details.detail[open] summary::before{content:"⌄ "}
+  details.detail p{margin:10px 0 0}
+
+  /* ── trajet ──────────────────────────────────────────────── */
   .seg{display:grid;grid-template-columns:14px 1fr auto;gap:0 14px;
        align-items:start;padding:11px 0}
   .seg .rail{display:flex;flex-direction:column;align-items:center;height:100%}
   .seg .pt{width:13px;height:13px;border-radius:50%;background:var(--ok);
-           margin-top:4px;flex:0 0 auto}
+           margin-top:5px;flex:0 0 auto}
   .seg .fil{width:3px;flex:1;background:var(--trait);margin-top:2px;min-height:12px}
   .seg:last-child .fil{display:none}
   .seg[data-etat="ko"] .pt{background:var(--ko)}
   .seg[data-etat="amont"] .pt{background:var(--ambre)}
-  .seg[data-etat="pluie"] .pt{background:var(--pluie)}
-  .seg .ligne-b{display:inline-block;font-size:12px;font-weight:700;
-                padding:2px 8px;border-radius:5px;color:#111;margin-bottom:3px}
+  .seg[data-etat="pluie"] .pt{background:var(--eau)}
+  .ligne-b{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;
+           border-radius:5px;color:#111;margin-bottom:3px}
   .seg .nom{font-size:16px}
   .seg .etat{font-size:13px;margin-top:2px}
   .seg[data-etat="ko"] .etat{color:var(--ko);font-weight:600}
   .seg[data-etat="amont"] .etat{color:var(--ambre);font-weight:600}
-  .seg[data-etat="pluie"] .etat{color:var(--pluie);font-weight:600}
-  .seg .mn{font-size:13px;color:var(--doux);font-variant-numeric:tabular-nums;
-           padding-top:3px;white-space:nowrap}
+  .seg[data-etat="pluie"] .etat{color:var(--eau);font-weight:600}
+  .seg .droite{display:flex;align-items:center;gap:9px;padding-top:3px;
+               white-space:nowrap}
+  .seg .mn{font-size:13px;color:var(--doux);font-variant-numeric:tabular-nums}
+  .meteo{display:flex;align-items:center;gap:5px;font-size:12.5px;
+         color:var(--doux);font-variant-numeric:tabular-nums}
+  .meteo svg{display:block;width:21px;height:21px;flex:0 0 auto}
 
-  h2{font-size:12px;font-weight:600;color:var(--doux);text-transform:uppercase;
-     letter-spacing:.06em;margin:0 0 10px}
+  /* ── réglages repliables ─────────────────────────────────── */
+  details.repli > summary{list-style:none;cursor:pointer;padding:15px 20px;
+    display:flex;align-items:center;justify-content:space-between;
+    font-size:13px;font-weight:650;letter-spacing:.06em;color:var(--doux);
+    text-transform:uppercase}
+  details.repli > summary::-webkit-details-marker{display:none}
+  details.repli > summary .chev{transition:transform .18s;color:var(--faible);
+    font-size:16px;text-transform:none}
+  details.repli[open] > summary .chev{transform:rotate(90deg)}
+  details.repli .contenu{padding:0 20px 20px}
+
   button.secondaire{font:inherit;font-weight:600;border:1px solid var(--trait);
     border-radius:11px;padding:13px 18px;background:var(--carte2);
     color:var(--texte);width:100%;cursor:pointer}
@@ -115,25 +142,27 @@
   .avert{background:rgba(245,165,36,.10);border:1px solid rgba(245,165,36,.3);
          border-radius:12px;padding:14px 16px;font-size:15px;margin-bottom:16px}
   .avert b{color:var(--ambre)}
-  footer{margin:24px 0 0;font-size:12px;color:#5c646f;text-align:center}
+  footer{margin:22px 0 0;font-size:11.5px;color:var(--faible);text-align:center;
+         line-height:1.6}
 </style>
 </head>
 <body>
 
-<header>
-  <h1 id="entete">MON TRAJET</h1>
-  <span class="maj" id="maj"></span>
-</header>
+<h1 id="entete">Mon trajet</h1>
 
-<!-- ─────────── bouton je pars ─────────── -->
-<section class="bloc" id="jepars-bloc">
+<!-- ─────────── je pars ─────────── -->
+<section class="bloc">
   <div class="dedans">
+    <div class="lieu">
+      <span class="ou" id="jp-ou">—</span>
+      <button class="bascule" id="jp-bascule" hidden></button>
+    </div>
     <button class="gros-bouton" id="jepars">Je pars</button>
     <div class="verdict" id="verdict">
       <div class="top" id="v-top"></div>
       <div class="ctx" id="v-ctx"></div>
       <div class="suite" id="v-suite"></div>
-      <div class="theorique" id="v-theo"></div>
+      <div class="menu" id="v-menu"></div>
     </div>
   </div>
 </section>
@@ -144,15 +173,16 @@
   <div class="dedans">
     <p class="titre" id="titre">Chargement…</p>
     <p class="sous" id="sous"></p>
+
+    <div class="consigne" id="consigne" hidden>
+      <div class="gd" id="c-gd"></div>
+      <div class="pour" id="c-pour"></div>
+      <div class="alt" id="c-alt" hidden></div>
+    </div>
+
     <p class="corps" id="corps"></p>
     <div class="arbitrage" id="arbitrage" hidden>
       <b>À vous de trancher</b><span id="arbitrage-txt"></span>
-    </div>
-    <div class="partir" id="partir" hidden>
-      <div class="ligne"><span class="h" id="p-confort"></span>
-        <span class="pour">pour être arrivé à <b id="p-cible-c"></b></span></div>
-      <div class="ligne"><span class="h off" id="p-tard"></span>
-        <span class="pour">pour <b id="p-cible-t"></b></span></div>
     </div>
     <details class="detail" id="detail" hidden>
       <summary>Message de l'exploitant</summary><div id="detail-txt"></div>
@@ -164,72 +194,101 @@
 <section class="bloc"><div class="dedans" id="trajet"></div></section>
 
 <!-- ─────────── réglages ─────────── -->
-<section>
-  <h2>Notifications</h2>
-  <div class="bloc"><div class="dedans">
+<details class="repli bloc">
+  <summary>Notifications <span class="chev">›</span></summary>
+  <div class="contenu">
     <div class="avert" id="avert" hidden></div>
     <button class="gros-bouton" id="activer">Activer les notifications</button>
     <p class="note" id="etat-notif"></p>
     <textarea id="abo" hidden readonly spellcheck="false"></textarea>
     <button class="secondaire" id="copier" hidden style="margin-top:10px">
       Copier l'abonnement</button>
-  </div></div>
-</section>
+  </div>
+</details>
 
-<footer>Veille PRIM + Open-Meteo · bulletins à 8h00 et 18h00</footer>
+<footer id="pied">Bulletins à 8h00 et 18h00</footer>
 
 <script>
 const CLE_PUBLIQUE = "BC40kGZH43x-ilhbiyIjPP_woKLwPPPi-kKbW6ANm6AKRzKGVdtqbFEAgNQgoqH3HpboPRxizIBYKfoJ_e3AmmE";
 const $ = id => document.getElementById(id);
+const echap = t => String(t).replace(/[<>&]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
+const hhmm = d => d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"});
 
-function urlB64ToUint8(b64){
-  const p = "=".repeat((4 - b64.length % 4) % 4);
-  const raw = atob((b64 + p).replace(/-/g,"+").replace(/_/g,"/"));
-  return Uint8Array.from([...raw].map(c => c.charCodeAt(0)));
+/* ══════════ pictogrammes météo ══════════
+   Le risque de pluie décide, pas la couverture nuageuse : marcher sous un
+   ciel gris ne dérange personne.                                          */
+const NUAGE = '<path d="M6.5 17.5h9.2a3.6 3.6 0 0 0 .3-7.2 5.2 5.2 0 0 0-9.9-1A3.6 3.6 0 0 0 6.5 17.5Z"/>';
+const PICTO = {
+  soleil: ['#f5a524','<circle cx="12" cy="12" r="4.2"/>'
+    + '<path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3'
+    + 'M5.4 5.4 7 7M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6"/>'],
+  nuage:  ['#9aa3ae', NUAGE],
+  risque: ['#7fa8d8', NUAGE + '<path d="M11 20v1.8"/>'],
+  pluie:  ['#5291ce', NUAGE + '<path d="M9 20v2.2M13.5 20v2.2"/>'],
+  averse: ['#3b82f6', NUAGE + '<path d="M8 20v2.4M12 20.2v2.6M16 20v2.4"/>'],
+};
+function icone(nom){
+  const [c, d] = PICTO[nom] || PICTO.nuage;
+  return `<svg viewBox="0 0 24 25" fill="none" stroke="${c}" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 }
-const installee = () => window.navigator.standalone === true ||
-  window.matchMedia("(display-mode: standalone)").matches;
-const echap = t => t.replace(/[<>&]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
 
-/* ══════════════ 1. le bulletin ══════════════ */
+/* ══════════ 1. bulletin ══════════ */
 function afficher(b){
   $("bulletin").dataset.statut = b.statut;
   $("titre").textContent = b.titre;
   $("corps").textContent = b.message || "";
-  $("entete").textContent = (b.libelle || "MON TRAJET").toUpperCase();
+  $("entete").textContent = b.libelle || "Mon trajet";
 
   const d = new Date(b.genere);
-  $("maj").textContent = d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"});
-  $("sous").textContent =
-    d.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})
-    + (b.plage ? ` · départ ${b.plage[0]}–${b.plage[1]}` : "");
+  // Toutes les indications de temps au même endroit, dans le même ordre :
+  // quel jour, quelle plage de départ, de quand date le relevé.
+  $("sous").innerHTML =
+      `<span class="bloc-t">${d.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}</span>`
+    + (b.plage ? `<span class="sep"> · </span><span class="bloc-t">départ ${b.plage[0]}–${b.plage[1]}</span>` : "")
+    + `<span class="sep"> · </span><span class="bloc-t">relevé ${hhmm(d)}</span>`;
+
+  const p = b.departs;
+  const montre = p && (p.confort || p.tard);
+  $("consigne").hidden = !montre;
+  if (montre){
+    if (p.confort){
+      $("c-gd").textContent   = "Partez avant " + p.confort;
+      $("c-pour").innerHTML   = "pour être arrivé à <b>" + p.cible_confort + "</b>";
+      $("c-alt").hidden = !p.tard;
+      if (p.tard) $("c-alt").innerHTML =
+        `ou <b>${p.tard}</b> pour ${p.cible_tard}, au plus tard`;
+    } else {
+      $("c-gd").textContent   = "Partez avant " + p.tard;
+      $("c-pour").innerHTML   = `pour <b>${p.cible_tard}</b> — ${p.cible_confort} n'est plus atteignable`;
+      $("c-alt").hidden = true;
+    }
+  }
 
   $("arbitrage").hidden = !b.arbitrage;
   if (b.arbitrage) $("arbitrage-txt").textContent = b.arbitrage;
-
-  const p = b.departs;
-  $("partir").hidden = !p || (!p.confort && !p.tard);
-  if (p){
-    $("p-confort").textContent = p.confort ? "Partez avant " + p.confort : "—";
-    $("p-cible-c").textContent = p.cible_confort;
-    $("p-tard").textContent    = p.tard ? "ou " + p.tard : "—";
-    $("p-cible-t").textContent = p.cible_tard;
-    $("p-confort").style.display = p.confort ? "" : "none";
-  }
-
   $("detail").hidden = !(b.detail && b.detail.length);
   if (b.detail) $("detail-txt").innerHTML =
     b.detail.map(t => "<p>" + echap(t) + "</p>").join("");
 
   const lib = {ok:"", ko:"perturbé", amont:"incident en amont", pluie:"pluie annoncée"};
-  $("trajet").innerHTML = b.segments.map(s => `
-    <div class="seg" data-etat="${s.etat}">
+  $("trajet").innerHTML = b.segments.map(s => {
+    const m = s.meteo;
+    return `<div class="seg" data-etat="${s.etat}">
       <span class="rail"><span class="pt"></span><span class="fil"></span></span>
       <span>${s.ligne ? `<span class="ligne-b" style="background:${s.couleur}">${s.ligne}</span><br>` : ""}
         <span class="nom">${echap(s.nom)}</span>
         ${lib[s.etat] ? `<div class="etat">${lib[s.etat]}</div>` : ""}</span>
-      <span class="mn">${s.duree} mn</span>
-    </div>`).join("");
+      <span class="droite">
+        ${m ? `<span class="meteo" title="${m.mm} mm, ${m.prob ?? "?"} % de risque">
+                 ${icone(m.picto)}${m.temp != null ? m.temp + "°" : ""}</span>` : ""}
+        <span class="mn">${s.duree} mn</span></span>
+    </div>`;
+  }).join("");
+
+  if (b.meteo_source) $("pied").innerHTML =
+    "Bulletins à 8h00 et 18h00<br>Trafic : PRIM / Île-de-France Mobilités · Météo : "
+    + echap(b.meteo_source);
 }
 
 async function charger(){
@@ -243,68 +302,100 @@ async function charger(){
   try{ await navigator.clearAppBadge(); }catch(e){}
 }
 
-/* ══════════════ 2. je pars ══════════════ */
+/* ══════════ 2. je pars ══════════ */
+let HORAIRES = null, ARRET = null;
+
+async function chargerHoraires(){
+  if (HORAIRES) return HORAIRES;
+  const r = await fetch("horaires.json?t=" + Date.now(), {cache:"no-store"});
+  HORAIRES = await r.json();
+  return HORAIRES;
+}
+function autreCle(c){ return c === "matin" ? "soir" : "matin"; }
+
+async function majLieu(){
+  try{
+    const h = await chargerHoraires();
+    if (!ARRET) ARRET = new Date().getHours() < 12 ? "matin" : "soir";
+    const a = h.arrets[ARRET], b = h.arrets[autreCle(ARRET)];
+    $("jp-ou").innerHTML = `Départ de <b>${echap(a.libelle)}</b> · ${a.ligne}`;
+    if (b){ $("jp-bascule").hidden = false;
+            $("jp-bascule").textContent = "↔ " + b.libelle; }
+  }catch(e){ $("jp-ou").textContent = "Horaires indisponibles"; }
+}
+$("jp-bascule").onclick = async () => {
+  ARRET = autreCle(ARRET); await majLieu();
+  $("verdict").classList.remove("vu");
+};
+
 $("jepars").onclick = async () => {
   $("jepars").textContent = "…";
   try{
-    const r = await fetch("horaires.json?t=" + Date.now(), {cache:"no-store"});
-    const h = await r.json();
-    const now = new Date();
-    const auj = now.toISOString().slice(0,10);
-    const prochains = h.departs
+    const h = await chargerHoraires();
+    if (!ARRET) ARRET = new Date().getHours() < 12 ? "matin" : "soir";
+    const a = h.arrets[ARRET], m = a.marche_mn, now = new Date();
+    // La grille est une journée type : on la projette sur aujourd'hui.
+    // Sinon, une grille publiée hier ferait répondre « service terminé ».
+    const auj = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}`
+              + `-${String(now.getDate()).padStart(2,"0")}`;
+    const vieille = h.jour && h.jour !== auj;
+    const prochains = a.departs
       .map(d => ({...d, t: new Date(`${auj}T${d.h}:00`)}))
-      .filter(d => (d.t - now)/60000 >= 0);
+      .filter(d => d.t >= now);
 
     $("verdict").classList.add("vu");
     $("jepars").textContent = "Je pars";
+    $("v-menu").textContent = vieille
+      ? `Grille du ${h.jour.split("-").reverse().join("/")} — pas celle d'aujourd'hui. `
+        + "À vérifier."
+      : "Horaires théoriques publiés à " + hhmm(new Date(h.genere)) + ". Pas du temps réel.";
 
     if (!prochains.length){
-      $("v-top").textContent = "Plus de départ prévu.";
-      $("v-top").className = "top";
-      $("v-ctx").textContent = `Grille publiée à ${new Date(h.genere)
-        .toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}.`;
-      $("v-suite").innerHTML = ""; $("v-theo").textContent = "";
+      const prem = a.departs[0];
+      $("v-top").textContent = "Service terminé."; $("v-top").className = "top";
+      $("v-ctx").innerHTML = prem
+        ? `Premier ${a.ligne} de la journée à <b>${prem.h}</b>.` : "";
+      $("v-suite").innerHTML = "";
       return;
     }
-    const m = h.marche_mn;
     const d0 = prochains[0], att0 = Math.round((d0.t - now)/60000);
-    // le premier départ réellement attrapable
     const ok = prochains.find(d => Math.round((d.t - now)/60000) >= m + 1) || d0;
     const att = Math.round((ok.t - now)/60000), partir = att - m;
 
-    if (att0 < m + 1 && ok !== d0){
+    if (ok !== d0){
       $("v-top").textContent = `Celui de ${d0.h} est trop juste.`;
       $("v-top").className = "top urgent";
-      $("v-ctx").innerHTML =
-        `Visez <b>${ok.h}</b> — partez dans <b>${partir} mn</b>. `
-        + `${m} mn de marche jusqu'à ${echap(h.arret)}.`;
+      $("v-ctx").innerHTML = `Visez <b>${ok.h}</b> — partez dans <b>${partir} mn</b>.`
+        + `<br>${m} mn de marche jusqu'à ${echap(a.libelle)}.`;
     } else if (partir <= 1){
       $("v-top").textContent = "Partez maintenant.";
       $("v-top").className = "top urgent";
-      $("v-ctx").innerHTML = `${h.ligne} à <b>${ok.h}</b>, dans ${att} mn. `
-        + `${m} mn de marche.`;
+      $("v-ctx").innerHTML = `${a.ligne} à <b>${ok.h}</b>, dans ${att} mn.`
+        + `<br>${m} mn de marche.`;
     } else {
       $("v-top").textContent = `Partez dans ${partir} mn.`;
       $("v-top").className = "top";
-      $("v-ctx").innerHTML = `${h.ligne} à <b>${ok.h}</b>, dans ${att} mn. `
-        + `${m} mn de marche jusqu'à ${echap(h.arret)}.`;
+      $("v-ctx").innerHTML = `${a.ligne} à <b>${ok.h}</b>, dans ${att} mn.`
+        + `<br>${m} mn de marche jusqu'à ${echap(a.libelle)}.`;
     }
-    $("v-suite").innerHTML = prochains.slice(0,4)
-      .filter(d => d !== ok)
+    $("v-suite").innerHTML = prochains.slice(0,5).filter(d => d !== ok)
+      .slice(0,3)
       .map(d => `<span class="puce">${d.h} · ${echap(d.dest)}</span>`).join("");
-    $("v-theo").textContent = "Horaires théoriques, publiés à "
-      + new Date(h.genere).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})
-      + ". Pas du temps réel.";
   }catch(e){
-    $("verdict").classList.add("vu");
-    $("jepars").textContent = "Je pars";
-    $("v-top").textContent = "Horaires indisponibles.";
-    $("v-top").className = "top";
-    $("v-ctx").textContent = ""; $("v-suite").innerHTML = ""; $("v-theo").textContent = "";
+    $("verdict").classList.add("vu"); $("jepars").textContent = "Je pars";
+    $("v-top").textContent = "Horaires indisponibles."; $("v-top").className = "top";
+    $("v-ctx").textContent = ""; $("v-suite").innerHTML = ""; $("v-menu").textContent = "";
   }
 };
 
-/* ══════════════ 3. notifications ══════════════ */
+/* ══════════ 3. notifications ══════════ */
+const installee = () => window.navigator.standalone === true ||
+  window.matchMedia("(display-mode: standalone)").matches;
+function urlB64ToUint8(b64){
+  const p = "=".repeat((4 - b64.length % 4) % 4);
+  const raw = atob((b64 + p).replace(/-/g,"+").replace(/_/g,"/"));
+  return Uint8Array.from([...raw].map(c => c.charCodeAt(0)));
+}
 async function etatInitial(){
   if (!("serviceWorker" in navigator) || !("PushManager" in window)){
     $("avert").hidden = false;
@@ -355,8 +446,10 @@ $("copier").onclick = async () => {
   }catch(e){ $("abo").select(); }
 };
 
-charger(); etatInitial();
-document.addEventListener("visibilitychange", () => { if (!document.hidden) charger(); });
+charger(); majLieu(); etatInitial();
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden){ HORAIRES = null; charger(); majLieu(); }
+});
 </script>
 </body>
 </html>

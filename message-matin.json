@@ -1,27 +1,30 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-19T21:16:56+02:00",
+ "genere": "2026-10-19T23:03:50+02:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
+  "confort": null,
+  "tard": "08h28",
   "cible_confort": "09h15",
   "cible_tard": "09h30",
-  "confort_perdu": false,
+  "confort_perdu": true,
   "intenable": false
  },
  "pluie_mm": 0.0,
+ "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
    "nom": "Marche jusqu'à Vincennes RER",
@@ -42,12 +45,19 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 5,
+    "temp": 12,
+    "vent": 14,
+    "picto": "soleil"
+   }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -59,24 +69,9 @@
    "couleur": "#8a8f98"
   }
  ],
- "detail": [],
- "prochains": [
-  {
-   "h": "21:14",
-   "dest": "Poissy"
-  },
-  {
-   "h": "21:18",
-   "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "21:22",
-   "dest": "Cergy le Haut"
-  },
-  {
-   "h": "21:31",
-   "dest": "Saint-Germain-en-Laye"
-  }
+ "detail": [
+  "Trafic interrompu entre Austerlitz et Javel."
  ],
- "notifier": false
+ "prochains": [],
+ "notifier": true
 }

@@ -1,0 +1,16 @@
+{
+ "Issy->Austerlitz": [
+  {
+   "id": "route:IDFM:SNCF:eb1d8805-ffeb-4d6d-8b11-6b200dc6073b",
+   "nom": "Musée d'Orsay - Dourdan"
+  },
+  {
+   "id": "route:IDFM:SNCF:21dfa578-368e-45c8-a6a2-d242dd67fb84",
+   "nom": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux - Saint-Martin d'Étampes"
+  },
+  {
+   "id": "route:IDFM:SNCF:59fdf4ae-542b-471b-ad7a-5d305b1abd33",
+   "nom": "Versailles Château Rive Gauche - Juvisy"
+  }
+ ]
+}
