@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon trajet</title>
+<meta name="description" content="Veille matinale sur le trajet Vincennes → Issy-Val-de-Seine.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mon trajet">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="theme-color" content="#0e1013">
+<style>
+  :root{
+    --fond:#0e1013; --carte:#181b20; --carte2:#1f2328;
+    --trait:#2b3038; --texte:#f2f4f7; --doux:#9aa3ae;
+    --ok:#2ec27e; --ko:#e2231a; --pluie:#5291ce; --ambre:#f5a524;
+    --r:16px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--fond); color:var(--texte);
+    font:400 17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:max(16px,env(safe-area-inset-top)) 16px max(24px,env(safe-area-inset-bottom));
+    max-width:560px; margin:0 auto;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  header{display:flex;align-items:baseline;justify-content:space-between;
+         gap:12px;margin:8px 0 20px}
+  h1{font-size:15px;font-weight:600;letter-spacing:.02em;margin:0;color:var(--doux)}
+  .maj{font-size:13px;color:var(--doux);font-variant-numeric:tabular-nums}
+
+  /* ── bulletin ─────────────────────────────────────────────── */
+  .bulletin{background:var(--carte);border-radius:var(--r);overflow:hidden;
+            border:1px solid var(--trait)}
+  .bande{height:4px;background:var(--ok)}
+  .bulletin[data-statut="perturbe"] .bande{background:var(--ko)}
+  .bulletin[data-statut="pluie"]    .bande{background:var(--pluie)}
+  .dedans{padding:20px}
+  .titre{font-size:26px;line-height:1.2;font-weight:650;letter-spacing:-.02em;
+         margin:0 0 4px}
+  .sous{color:var(--doux);font-size:15px;margin:0}
+  .corps{white-space:pre-wrap;margin:16px 0 0;font-size:16px}
+  .corps:empty{display:none}
+
+  .arbitrage{margin:16px 0 0;padding:14px 16px;border-radius:12px;
+             background:rgba(245,165,36,.10);border:1px solid rgba(245,165,36,.3)}
+  .arbitrage b{display:block;font-size:13px;font-weight:600;color:var(--ambre);
+               text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+
+  .arrivee{display:flex;align-items:baseline;gap:10px;margin:18px 0 0;
+           padding-top:16px;border-top:1px solid var(--trait)}
+  .arrivee .gros{font-size:32px;font-weight:650;letter-spacing:-.02em;
+                 font-variant-numeric:tabular-nums}
+  .arrivee .barre{color:var(--doux);text-decoration:line-through;font-size:17px;
+                  font-variant-numeric:tabular-nums}
+  .arrivee .delta{margin-left:auto;font-size:14px;color:var(--ko);font-weight:600}
+
+  /* ── le trajet ────────────────────────────────────────────── */
+  .trajet{margin:20px 0 0;background:var(--carte);border:1px solid var(--trait);
+          border-radius:var(--r);padding:6px 20px 14px}
+  .seg{display:grid;grid-template-columns:52px 14px 1fr;gap:0 14px;
+       align-items:start;padding:12px 0;position:relative}
+  .seg .h{font-size:14px;color:var(--doux);font-variant-numeric:tabular-nums;
+          padding-top:2px}
+  .seg .rail{display:flex;flex-direction:column;align-items:center;height:100%}
+  .seg .pt{width:13px;height:13px;border-radius:50%;background:var(--doux);
+           margin-top:4px;flex:0 0 auto}
+  .seg .fil{width:3px;flex:1;background:var(--trait);margin-top:2px;min-height:14px}
+  .seg:last-child .fil{display:none}
+  .seg .nom{font-size:16px}
+  .seg .ligne{display:inline-block;font-size:12px;font-weight:700;
+              padding:2px 8px;border-radius:5px;color:#111;margin-bottom:4px}
+  .seg .etat{font-size:13px;color:var(--doux);margin-top:2px}
+  .seg[data-etat="ko"] .etat{color:var(--ko);font-weight:600}
+  .seg[data-etat="pluie"] .etat{color:var(--pluie);font-weight:600}
+  .seg[data-etat="ko"] .pt{background:var(--ko)}
+  .seg[data-etat="pluie"] .pt{background:var(--pluie)}
+  .seg[data-etat="ok"] .pt{background:var(--ok)}
+
+  details.detail{margin:16px 0 0;font-size:14px;color:var(--doux)}
+  details.detail summary{cursor:pointer;font-weight:600}
+  details.detail p{margin:10px 0 0}
+
+  /* ── réglages ─────────────────────────────────────────────── */
+  .reglages{margin:24px 0 0}
+  .reglages h2{font-size:13px;font-weight:600;color:var(--doux);
+               text-transform:uppercase;letter-spacing:.06em;margin:0 0 10px}
+  .boite{background:var(--carte);border:1px solid var(--trait);
+         border-radius:var(--r);padding:16px}
+  button{font:inherit;font-weight:600;border:0;border-radius:11px;
+         padding:13px 18px;background:#3b82f6;color:#fff;width:100%;
+         cursor:pointer}
+  button.secondaire{background:var(--carte2);color:var(--texte);
+                    border:1px solid var(--trait)}
+  button[disabled]{opacity:.45}
+  .note{font-size:14px;color:var(--doux);margin:12px 0 0}
+  .note strong{color:var(--texte)}
+  textarea{width:100%;height:120px;margin-top:12px;background:#0b0d10;
+           color:var(--doux);border:1px solid var(--trait);border-radius:10px;
+           padding:10px;font:400 11px/1.4 ui-monospace,SFMono-Regular,monospace;
+           resize:vertical}
+  .avert{background:rgba(245,165,36,.10);border:1px solid rgba(245,165,36,.3);
+         border-radius:12px;padding:14px 16px;font-size:15px;margin-bottom:16px}
+  .avert b{color:var(--ambre)}
+  footer{margin:28px 0 0;font-size:12px;color:#5c646f;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MON TRAJET</h1>
+  <span class="maj" id="maj"></span>
+</header>
+
+<section class="bulletin" id="bulletin" data-statut="normal">
+  <div class="bande"></div>
+  <div class="dedans">
+    <p class="titre" id="titre">Chargement…</p>
+    <p class="sous" id="sous"></p>
+    <p class="corps" id="corps"></p>
+    <div class="arbitrage" id="arbitrage" hidden>
+      <b>À vous de trancher</b><span id="arbitrage-txt"></span>
+    </div>
+    <div class="arrivee" id="arrivee" hidden>
+      <span class="gros" id="arr-gros"></span>
+      <span class="barre" id="arr-barre"></span>
+      <span class="delta" id="arr-delta"></span>
+    </div>
+    <details class="detail" id="detail" hidden>
+      <summary>Message de l'exploitant</summary>
+      <div id="detail-txt"></div>
+    </details>
+  </div>
+</section>
+
+<section class="trajet" id="trajet"></section>
+
+<section class="reglages">
+  <h2>Notifications</h2>
+  <div class="boite">
+    <div class="avert" id="avert" hidden></div>
+    <button id="activer">Activer les notifications</button>
+    <p class="note" id="etat-notif"></p>
+    <textarea id="abo" hidden readonly spellcheck="false"></textarea>
+    <button class="secondaire" id="copier" hidden style="margin-top:10px">
+      Copier l'abonnement
+    </button>
+  </div>
+</section>
+
+<footer>Veille PRIM + Open-Meteo · bulletin à 8h00</footer>
+
+<script>
+const CLE_PUBLIQUE = "BC40kGZH43x-ilhbiyIjPP_woKLwPPPi-kKbW6ANm6AKRzKGVdtqbFEAgNQgoqH3HpboPRxizIBYKfoJ_e3AmmE";
+
+const $ = id => document.getElementById(id);
+
+/* ── utilitaires ──────────────────────────────────────────── */
+function urlB64ToUint8(b64){
+  const p = "=".repeat((4 - b64.length % 4) % 4);
+  const s = (b64 + p).replace(/-/g,"+").replace(/_/g,"/");
+  const raw = atob(s);
+  return Uint8Array.from([...raw].map(c => c.charCodeAt(0)));
+}
+const installee = () =>
+  window.navigator.standalone === true ||
+  window.matchMedia("(display-mode: standalone)").matches;
+
+/* ── affichage du bulletin ────────────────────────────────── */
+function afficher(b){
+  $("bulletin").dataset.statut = b.statut;
+  $("titre").textContent = b.titre;
+  $("corps").textContent = b.message || "";
+
+  const d = new Date(b.genere);
+  $("maj").textContent = d.toLocaleTimeString("fr-FR",
+      {hour:"2-digit", minute:"2-digit"});
+  $("sous").textContent = d.toLocaleDateString("fr-FR",
+      {weekday:"long", day:"numeric", month:"long"});
+
+  if (b.arbitrage){
+    $("arbitrage").hidden = false;
+    $("arbitrage-txt").textContent = b.arbitrage;
+  } else $("arbitrage").hidden = true;
+
+  if (b.arrivee){
+    $("arrivee").hidden = false;
+    $("arr-gros").textContent  = b.arrivee;
+    $("arr-barre").textContent = b.arrivee_nominale;
+    $("arr-delta").textContent = "+" + b.retard_mn + " mn";
+  } else $("arrivee").hidden = true;
+
+  if (b.detail && b.detail.length){
+    $("detail").hidden = false;
+    $("detail-txt").innerHTML =
+      b.detail.map(t => "<p>" + t.replace(/[<>&]/g, c =>
+        ({"<":"&lt;", ">":"&gt;", "&":"&amp;"}[c])) + "</p>").join("");
+  } else $("detail").hidden = true;
+
+  const libelle = {ok:"", ko:"perturbé", pluie:"pluie annoncée"};
+  $("trajet").innerHTML = b.segments.map(s => `
+    <div class="seg" data-etat="${s.etat}">
+      <span class="h">${s.h}</span>
+      <span class="rail"><span class="pt"></span><span class="fil"></span></span>
+      <span>
+        ${s.ligne ? `<span class="ligne" style="background:${s.couleur}">${s.ligne}</span><br>` : ""}
+        <span class="nom">${s.nom}</span>
+        ${libelle[s.etat] ? `<div class="etat">${libelle[s.etat]}</div>` : ""}
+      </span>
+    </div>`).join("");
+}
+
+async function charger(){
+  try{
+    const r = await fetch("message.json?t=" + Date.now(), {cache:"no-store"});
+    afficher(await r.json());
+  }catch(e){
+    $("titre").textContent = "Bulletin indisponible";
+    $("corps").textContent = "Impossible de lire le dernier bulletin.";
+  }
+  try{ await navigator.clearAppBadge(); }catch(e){}
+}
+
+/* ── abonnement au push ───────────────────────────────────── */
+async function etatInitial(){
+  if (!("serviceWorker" in navigator) || !("PushManager" in window)){
+    $("avert").hidden = false;
+    $("avert").innerHTML = "<b>Push indisponible.</b> Ce navigateur ne gère "
+      + "pas les notifications web.";
+    $("activer").disabled = true;
+    return;
+  }
+  if (!installee()){
+    $("avert").hidden = false;
+    $("avert").innerHTML = "<b>À installer d'abord.</b> Sur iPhone, les "
+      + "notifications ne fonctionnent que si la webapp est sur l'écran "
+      + "d'accueil : Partager, puis « Sur l'écran d'accueil ». Rouvrez-la "
+      + "ensuite depuis l'icône.";
+    $("activer").disabled = true;
+    return;
+  }
+  const reg = await navigator.serviceWorker.register("sw.js");
+  const abo = await reg.pushManager.getSubscription();
+  if (abo) montrerAbo(abo, "Notifications actives.");
+}
+
+function montrerAbo(abo, msg){
+  $("etat-notif").innerHTML = "<strong>" + msg + "</strong> Collez "
+    + "l'abonnement ci-dessous dans <code>abonnements.json</code>.";
+  $("abo").hidden = false;
+  $("abo").value = JSON.stringify(abo.toJSON(), null, 1);
+  $("copier").hidden = false;
+  $("activer").textContent = "Notifications activées";
+  $("activer").disabled = true;
+}
+
+$("activer").onclick = async () => {
+  $("activer").disabled = true;
+  try{
+    const perm = await Notification.requestPermission();
+    if (perm !== "granted"){
+      $("etat-notif").textContent = "Autorisation refusée. Réglages › "
+        + "Notifications › Mon trajet pour la rétablir.";
+      $("activer").disabled = false;
+      return;
+    }
+    const reg = await navigator.serviceWorker.register("sw.js");
+    await navigator.serviceWorker.ready;
+    const abo = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlB64ToUint8(CLE_PUBLIQUE)
+    });
+    montrerAbo(abo, "C'est fait.");
+  }catch(e){
+    $("etat-notif").textContent = "Échec : " + e.message;
+    $("activer").disabled = false;
+  }
+};
+
+$("copier").onclick = async () => {
+  try{
+    await navigator.clipboard.writeText($("abo").value);
+    $("copier").textContent = "Copié";
+    setTimeout(() => $("copier").textContent = "Copier l'abonnement", 1600);
+  }catch(e){ $("abo").select(); }
+};
+
+charger();
+etatInitial();
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) charger();
+});
+</script>
+</body>
+</html>

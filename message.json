@@ -1,0 +1,37 @@
+{
+  "genere": "2026-10-19T16:29:53+02:00",
+  "statut": "normal",
+  "titre": "Trafic normal",
+  "lignes": [],
+  "message": "",
+  "arbitrage": null,
+  "arrivee": null,
+  "arrivee_nominale": "09h07",
+  "retard_mn": 0,
+  "pluie_mm": 0.0,
+  "segments": [
+    {
+      "nom": "Vincennes → Gare de Lyon",
+      "ligne": "RER A",
+      "etat": "ok",
+      "h": "08h20",
+      "couleur": "#E2231A"
+    },
+    {
+      "nom": "Passerelle Charles-de-Gaulle",
+      "ligne": null,
+      "etat": "ok",
+      "h": "08h32",
+      "couleur": "#8a8f98"
+    },
+    {
+      "nom": "Austerlitz → Issy-Val-de-Seine",
+      "ligne": "RER C",
+      "etat": "ok",
+      "h": "08h47",
+      "couleur": "#FFCE00"
+    }
+  ],
+  "detail": [],
+  "notifier": false
+}
