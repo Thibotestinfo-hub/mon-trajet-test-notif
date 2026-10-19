@@ -1,20 +1,18 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-19T23:12:50+02:00",
+ "genere": "2026-10-19T23:17:26+02:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "perturbe",
- "titre": "RER C perturbé",
- "lignes": [
-  "RER C"
- ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 10,
+ "retard_mn": 0,
  "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
@@ -24,12 +22,19 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 59,
+    "temp": 14,
+    "vent": 8,
+    "picto": "risque"
+   }
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
    "ligne": "RER C",
-   "etat": "ko",
+   "etat": "ok",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -41,10 +46,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
-    "temp": 12,
-    "vent": 14,
-    "picto": "soleil"
+    "prob": 59,
+    "temp": 14,
+    "vent": 10,
+    "picto": "risque"
    }
   },
   {
@@ -59,12 +64,17 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 31,
+    "temp": 14,
+    "vent": 10,
+    "picto": "nuage"
+   }
   }
  ],
- "detail": [
-  "Trafic interrompu entre Austerlitz et Javel."
- ],
+ "detail": [],
  "prochains": [],
- "notifier": true
+ "notifier": false
 }
