@@ -1,0 +1,133 @@
+{
+ "genere": "2026-10-19T21:16:56+02:00",
+ "moment": "matin",
+ "arret": "Vincennes RER",
+ "ligne": "RER A",
+ "marche_mn": 5,
+ "departs": [
+  {
+   "h": "08:16",
+   "dest": "Poissy"
+  },
+  {
+   "h": "08:19",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "08:21",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "08:23",
+   "dest": "Rueil-Malmaison"
+  },
+  {
+   "h": "08:24",
+   "dest": "Poissy"
+  },
+  {
+   "h": "08:25",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "08:29",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "08:31",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "08:35",
+   "dest": "Poissy"
+  },
+  {
+   "h": "08:37",
+   "dest": "Le Vésinet - Le Pecq"
+  },
+  {
+   "h": "08:38",
+   "dest": "La Défense"
+  },
+  {
+   "h": "08:42",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "08:45",
+   "dest": "Rueil-Malmaison"
+  },
+  {
+   "h": "08:46",
+   "dest": "Poissy"
+  },
+  {
+   "h": "08:51",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "08:53",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "08:55",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "08:56",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "08:59",
+   "dest": "Poissy"
+  },
+  {
+   "h": "09:00",
+   "dest": "Le Vésinet - Le Pecq"
+  },
+  {
+   "h": "09:02",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "09:03",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "09:05",
+   "dest": "Poissy"
+  },
+  {
+   "h": "09:07",
+   "dest": "Rueil-Malmaison"
+  },
+  {
+   "h": "09:10",
+   "dest": "La Défense"
+  },
+  {
+   "h": "09:13",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "09:15",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "09:17",
+   "dest": "Poissy"
+  },
+  {
+   "h": "09:17",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "09:22",
+   "dest": "La Défense"
+  },
+  {
+   "h": "09:23",
+   "dest": "Le Vésinet - Le Pecq"
+  }
+ ]
+}

@@ -8,7 +8,7 @@
  * en cas d'échec de lecture, on affiche quand même un message de repli.
  */
 
-const VERSION = "v2";
+const VERSION = "v3";
 const COQUE = ["./", "./index.html", "./manifest.webmanifest",
                "./icon-192.png", "./icon-512.png"];
 
@@ -44,13 +44,14 @@ self.addEventListener("push", e => {
       const l = (b.message || "").split("\n").filter(Boolean);
       corps = l.slice(0, 3).join("\n");
       if (b.arrivee) corps += `\nArrivée ${b.arrivee} au lieu de ${b.arrivee_nominale}.`;
+      const d = new Date(b.genere);
+      const h = d.toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"});
       // Un bulletin « trafic normal » ne produit aucune ligne : iOS exige
       // malgré tout un corps, sans quoi la notification passe inaperçue.
-      if (!corps.trim()){
-        const h = new Date(b.genere).toLocaleTimeString("fr-FR",
-                    {hour:"2-digit", minute:"2-digit"});
-        corps = `Rien à signaler sur votre trajet. Relevé de ${h}.`;
-      }
+      if (!corps.trim()) corps = `Rien à signaler sur votre trajet. Relevé de ${h}.`;
+      // Notification retardée (téléphone éteint, réseau faible) : on date le
+      // relevé plutôt que de le faire passer pour l'instant présent.
+      else if (Date.now() - d.getTime() > 20*60*1000) corps += `\n(relevé de ${h})`;
     }catch(err){ /* repli ci-dessus */ }
 
     await self.registration.showNotification(titre, {

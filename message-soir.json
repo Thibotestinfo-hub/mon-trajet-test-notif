@@ -1,0 +1,75 @@
+{
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-10-19T21:16:25+02:00",
+ "plage": [
+  "18h15",
+  "19h45"
+ ],
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
+ "arbitrage": null,
+ "a_confirmer": false,
+ "retard_mn": 0,
+ "departs": null,
+ "pluie_mm": 0.2,
+ "segments": [
+  {
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 6,
+   "couleur": "#8a8f98"
+  },
+  {
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "ok",
+   "duree": 19,
+   "couleur": "#FFCE00"
+  },
+  {
+   "nom": "Passerelle Charles-de-Gaulle",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#8a8f98"
+  },
+  {
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 11,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Marche jusqu'au domicile",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 5,
+   "couleur": "#8a8f98"
+  }
+ ],
+ "detail": [],
+ "prochains": [
+  {
+   "h": "21:17",
+   "dest": "Versailles Château Rive Gauche"
+  },
+  {
+   "h": "21:21",
+   "dest": "Juvisy"
+  },
+  {
+   "h": "21:31",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+  },
+  {
+   "h": "21:33",
+   "dest": "Versailles Château Rive Gauche"
+  }
+ ],
+ "notifier": false
+}

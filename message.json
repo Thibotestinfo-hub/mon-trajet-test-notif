@@ -1,37 +1,82 @@
 {
-  "genere": "2026-10-19T16:29:53+02:00",
-  "statut": "normal",
-  "titre": "Trafic normal",
-  "lignes": [],
-  "message": "",
-  "arbitrage": null,
-  "arrivee": null,
-  "arrivee_nominale": "09h07",
-  "retard_mn": 0,
-  "pluie_mm": 0.0,
-  "segments": [
-    {
-      "nom": "Vincennes → Gare de Lyon",
-      "ligne": "RER A",
-      "etat": "ok",
-      "h": "08h20",
-      "couleur": "#E2231A"
-    },
-    {
-      "nom": "Passerelle Charles-de-Gaulle",
-      "ligne": null,
-      "etat": "ok",
-      "h": "08h32",
-      "couleur": "#8a8f98"
-    },
-    {
-      "nom": "Austerlitz → Issy-Val-de-Seine",
-      "ligne": "RER C",
-      "etat": "ok",
-      "h": "08h47",
-      "couleur": "#FFCE00"
-    }
-  ],
-  "detail": [],
-  "notifier": false
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-10-19T21:16:56+02:00",
+ "plage": [
+  "08h15",
+  "08h40"
+ ],
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
+ "arbitrage": null,
+ "a_confirmer": false,
+ "retard_mn": 0,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
+ "pluie_mm": 0.0,
+ "segments": [
+  {
+   "nom": "Marche jusqu'à Vincennes RER",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 5,
+   "couleur": "#8a8f98"
+  },
+  {
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Passerelle Charles-de-Gaulle",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#8a8f98"
+  },
+  {
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
+   "etat": "ok",
+   "duree": 19,
+   "couleur": "#FFCE00"
+  },
+  {
+   "nom": "Marche jusqu'au bureau",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 6,
+   "couleur": "#8a8f98"
+  }
+ ],
+ "detail": [],
+ "prochains": [
+  {
+   "h": "21:14",
+   "dest": "Poissy"
+  },
+  {
+   "h": "21:18",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "21:22",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "21:31",
+   "dest": "Saint-Germain-en-Laye"
+  }
+ ],
+ "notifier": false
 }
