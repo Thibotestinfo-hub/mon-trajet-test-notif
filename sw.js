@@ -8,9 +8,11 @@
  * en cas d'échec de lecture, on affiche quand même un message de repli.
  */
 
-const VERSION = "v3";
-const COQUE = ["./", "./index.html", "./manifest.webmanifest",
-               "./icon-192.png", "./icon-512.png"];
+const VERSION = "v4";
+// Seuls les fichiers qui ne changent jamais sont mis en cache d'avance.
+// index.html en était, et c'était une erreur : la page restait figée sur
+// l'ancienne version après chaque publication.
+const COQUE = ["./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(COQUE))
@@ -23,15 +25,34 @@ self.addEventListener("activate", e => {
     .then(() => self.clients.claim()));
 });
 
-/* La coque en cache, le bulletin toujours sur le réseau. */
+/* Réseau d'abord pour la page et les données, cache seulement en secours.
+ * L'inverse — le cache d'abord — fige l'app sur l'ancienne version après
+ * chaque publication, et c'est très déroutant : on voit le dépôt à jour et
+ * l'écran inchangé. Les icônes, elles, ne bougent jamais : cache d'abord. */
 self.addEventListener("fetch", e => {
-  const u = new URL(e.request.url);
-  if (u.pathname.endsWith("message.json")) return;         // réseau direct
   if (e.request.method !== "GET") return;
-  e.respondWith(
-    caches.match(e.request, {ignoreSearch:true})
-      .then(r => r || fetch(e.request))
-  );
+  const u = new URL(e.request.url);
+  const fige = /\.(png|webmanifest)$/.test(u.pathname);
+
+  if (fige){
+    e.respondWith(caches.match(e.request, {ignoreSearch:true})
+      .then(r => r || fetch(e.request)));
+    return;
+  }
+  e.respondWith((async () => {
+    try{
+      const r = await fetch(e.request, {cache:"no-store"});
+      if (r && r.ok && u.origin === self.location.origin){
+        const c = await caches.open(VERSION);
+        c.put(e.request, r.clone());        // copie de secours, hors ligne
+      }
+      return r;
+    }catch(err){
+      const c = await caches.match(e.request, {ignoreSearch:true});
+      if (c) return c;
+      throw err;
+    }
+  })());
 });
 
 self.addEventListener("push", e => {
