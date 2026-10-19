@@ -8,7 +8,7 @@
  * en cas d'échec de lecture, on affiche quand même un message de repli.
  */
 
-const VERSION = "v1";
+const VERSION = "v2";
 const COQUE = ["./", "./index.html", "./manifest.webmanifest",
                "./icon-192.png", "./icon-512.png"];
 
@@ -44,6 +44,13 @@ self.addEventListener("push", e => {
       const l = (b.message || "").split("\n").filter(Boolean);
       corps = l.slice(0, 3).join("\n");
       if (b.arrivee) corps += `\nArrivée ${b.arrivee} au lieu de ${b.arrivee_nominale}.`;
+      // Un bulletin « trafic normal » ne produit aucune ligne : iOS exige
+      // malgré tout un corps, sans quoi la notification passe inaperçue.
+      if (!corps.trim()){
+        const h = new Date(b.genere).toLocaleTimeString("fr-FR",
+                    {hour:"2-digit", minute:"2-digit"});
+        corps = `Rien à signaler sur votre trajet. Relevé de ${h}.`;
+      }
     }catch(err){ /* repli ci-dessus */ }
 
     await self.registration.showNotification(titre, {
