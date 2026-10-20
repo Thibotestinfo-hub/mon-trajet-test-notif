@@ -1,18 +1,20 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-19T23:17:26+02:00",
+ "genere": "2026-10-20T16:03:51+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER A perturbé",
+ "lignes": [
+  "RER A"
+ ],
+ "message": "RER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied",
  "arbitrage": null,
- "a_confirmer": false,
- "retard_mn": 0,
+ "a_confirmer": true,
+ "retard_mn": 8,
  "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
@@ -25,10 +27,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 59,
-    "temp": 14,
-    "vent": 8,
-    "picto": "risque"
+    "prob": 8,
+    "temp": 12,
+    "vent": 12,
+    "picto": "soleil"
    }
   },
   {
@@ -46,16 +48,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 59,
-    "temp": 14,
-    "vent": 10,
-    "picto": "risque"
+    "prob": 5,
+    "temp": 12,
+    "vent": 12,
+    "picto": "soleil"
    }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
    "ligne": "RER A",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 11,
    "couleur": "#E2231A"
   },
@@ -67,14 +69,33 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 31,
-    "temp": 14,
-    "vent": 10,
-    "picto": "nuage"
+    "prob": 3,
+    "temp": 12,
+    "vent": 12,
+    "picto": "soleil"
    }
   }
  ],
- "detail": [],
- "prochains": [],
- "notifier": false
+ "detail": [
+  "Le 20 et 21 octobre à partir de 22 heures, les accès à la station Châtelet seront fermés, les trains ne marqueront pas l'arrêt, les correspondances ne sont pas assurées en raison de mesures de sécurité demandées par la P"
+ ],
+ "prochains": [
+  {
+   "h": "16:04",
+   "dest": "Versailles Château Rive Gauche"
+  },
+  {
+   "h": "16:07",
+   "dest": "Dourdan"
+  },
+  {
+   "h": "16:09",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+  },
+  {
+   "h": "16:12",
+   "dest": "Saint-Martin d'Étampes"
+  }
+ ],
+ "notifier": true
 }
