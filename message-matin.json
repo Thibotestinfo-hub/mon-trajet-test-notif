@@ -1,26 +1,24 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-19T23:03:50+02:00",
+ "genere": "2026-10-20T06:03:53+00:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "perturbe",
- "titre": "RER C perturbé",
- "lignes": [
-  "RER C"
- ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 10,
+ "retard_mn": 0,
  "departs": {
-  "confort": null,
-  "tard": "08h28",
+  "confort": "08h23",
+  "tard": "08h38",
   "cible_confort": "09h15",
   "cible_tard": "09h30",
-  "confort_perdu": true,
+  "confort_perdu": false,
   "intenable": false
  },
  "pluie_mm": 0.0,
@@ -31,7 +29,14 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 82,
+    "temp": 13,
+    "vent": 11,
+    "picto": "risque"
+   }
   },
   {
    "nom": "Vincennes → Gare de Lyon",
@@ -48,16 +53,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
-    "temp": 12,
-    "vent": 14,
-    "picto": "soleil"
+    "prob": 78,
+    "temp": 13,
+    "vent": 13,
+    "picto": "risque"
    }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "ko",
+   "etat": "ok",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -66,12 +71,34 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 78,
+    "temp": 13,
+    "vent": 11,
+    "picto": "risque"
+   }
   }
  ],
- "detail": [
-  "Trafic interrompu entre Austerlitz et Javel."
+ "detail": [],
+ "prochains": [
+  {
+   "h": "06:02",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "06:04",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "06:06",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "06:09",
+   "dest": "Poissy"
+  }
  ],
- "prochains": [],
- "notifier": true
+ "notifier": false
 }

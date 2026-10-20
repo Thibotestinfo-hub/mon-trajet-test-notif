@@ -1,10 +1,10 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-10-19T23:17:26+02:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-10-20T06:03:53+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
  "statut": "normal",
  "titre": "Trafic normal",
@@ -13,30 +13,37 @@
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
- "departs": null,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 59,
-    "temp": 14,
-    "vent": 8,
+    "prob": 82,
+    "temp": 13,
+    "vent": 11,
     "picto": "risque"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
-   "ligne": "RER C",
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 10,
+   "couleur": "#E2231A"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -46,35 +53,52 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 59,
-    "temp": 14,
-    "vent": 10,
+    "prob": 78,
+    "temp": 13,
+    "vent": 13,
     "picto": "risque"
    }
   },
   {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
    "etat": "ok",
-   "duree": 11,
-   "couleur": "#E2231A"
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au domicile",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 31,
-    "temp": 14,
-    "vent": 10,
-    "picto": "nuage"
+    "prob": 78,
+    "temp": 13,
+    "vent": 11,
+    "picto": "risque"
    }
   }
  ],
  "detail": [],
- "prochains": [],
+ "prochains": [
+  {
+   "h": "06:02",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "06:04",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "06:06",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "06:09",
+   "dest": "Poissy"
+  }
+ ],
  "notifier": false
 }
