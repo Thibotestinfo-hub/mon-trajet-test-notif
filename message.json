@@ -1,44 +1,49 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-10-20T16:03:51+00:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-10-21T06:02:01+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
- "statut": "perturbe",
- "titre": "RER A perturbé",
- "lignes": [
-  "RER A"
- ],
- "message": "RER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
- "a_confirmer": true,
- "retard_mn": 8,
- "departs": null,
+ "a_confirmer": false,
+ "retard_mn": 0,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 8,
-    "temp": 12,
-    "vent": 12,
-    "picto": "soleil"
+    "prob": 49,
+    "temp": 11,
+    "vent": 19,
+    "picto": "nuage"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
-   "ligne": "RER C",
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 10,
+   "couleur": "#E2231A"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -48,54 +53,52 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
-    "temp": 12,
-    "vent": 12,
-    "picto": "soleil"
+    "prob": 49,
+    "temp": 11,
+    "vent": 20,
+    "picto": "nuage"
    }
   },
   {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
-   "etat": "ko",
-   "duree": 11,
-   "couleur": "#E2231A"
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
+   "etat": "ok",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au domicile",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
+    "prob": 49,
     "temp": 12,
-    "vent": 12,
-    "picto": "soleil"
+    "vent": 18,
+    "picto": "nuage"
    }
   }
  ],
- "detail": [
-  "Le 20 et 21 octobre à partir de 22 heures, les accès à la station Châtelet seront fermés, les trains ne marqueront pas l'arrêt, les correspondances ne sont pas assurées en raison de mesures de sécurité demandées par la P"
- ],
+ "detail": [],
  "prochains": [
   {
-   "h": "16:04",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "06:02",
+   "dest": "Poissy"
   },
   {
-   "h": "16:07",
-   "dest": "Dourdan"
+   "h": "06:03",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "16:09",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "06:06",
+   "dest": "Cergy le Haut"
   },
   {
-   "h": "16:12",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "06:06",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
- "notifier": true
+ "notifier": false
 }

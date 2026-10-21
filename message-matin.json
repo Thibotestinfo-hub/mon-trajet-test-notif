@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-20T06:03:53+00:00",
+ "genere": "2026-10-21T06:02:01+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -32,10 +32,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 82,
-    "temp": 13,
-    "vent": 11,
-    "picto": "risque"
+    "prob": 49,
+    "temp": 11,
+    "vent": 19,
+    "picto": "nuage"
    }
   },
   {
@@ -53,10 +53,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 78,
-    "temp": 13,
-    "vent": 13,
-    "picto": "risque"
+    "prob": 49,
+    "temp": 11,
+    "vent": 20,
+    "picto": "nuage"
    }
   },
   {
@@ -74,10 +74,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 78,
-    "temp": 13,
-    "vent": 11,
-    "picto": "risque"
+    "prob": 49,
+    "temp": 12,
+    "vent": 18,
+    "picto": "nuage"
    }
   }
  ],
@@ -85,19 +85,19 @@
  "prochains": [
   {
    "h": "06:02",
+   "dest": "Poissy"
+  },
+  {
+   "h": "06:03",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "06:04",
+   "h": "06:06",
    "dest": "Cergy le Haut"
   },
   {
    "h": "06:06",
    "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "06:09",
-   "dest": "Poissy"
   }
  ],
  "notifier": false
