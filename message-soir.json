@@ -1,20 +1,18 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-20T16:03:51+00:00",
+ "genere": "2026-10-21T16:02:57+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "perturbe",
- "titre": "RER A perturbé",
- "lignes": [
-  "RER A"
- ],
- "message": "RER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
- "a_confirmer": true,
- "retard_mn": 8,
+ "a_confirmer": false,
+ "retard_mn": 0,
  "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
@@ -27,10 +25,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 8,
-    "temp": 12,
-    "vent": 12,
-    "picto": "soleil"
+    "prob": 57,
+    "temp": 13,
+    "vent": 22,
+    "picto": "risque"
    }
   },
   {
@@ -48,16 +46,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
+    "prob": 57,
     "temp": 12,
-    "vent": 12,
-    "picto": "soleil"
+    "vent": 22,
+    "picto": "risque"
    }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
    "ligne": "RER A",
-   "etat": "ko",
+   "etat": "ok",
    "duree": 11,
    "couleur": "#E2231A"
   },
@@ -69,33 +67,31 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
+    "prob": 52,
     "temp": 12,
-    "vent": 12,
-    "picto": "soleil"
+    "vent": 21,
+    "picto": "risque"
    }
   }
  ],
- "detail": [
-  "Le 20 et 21 octobre à partir de 22 heures, les accès à la station Châtelet seront fermés, les trains ne marqueront pas l'arrêt, les correspondances ne sont pas assurées en raison de mesures de sécurité demandées par la P"
- ],
+ "detail": [],
  "prochains": [
   {
-   "h": "16:04",
-   "dest": "Versailles Château Rive Gauche"
-  },
-  {
-   "h": "16:07",
+   "h": "15:37",
    "dest": "Dourdan"
   },
   {
-   "h": "16:09",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "15:44",
+   "dest": "Chaville - Vélizy"
   },
   {
-   "h": "16:12",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "15:52",
+   "dest": "Dourdan"
+  },
+  {
+   "h": "16:04",
+   "dest": "Versailles Château Rive Gauche"
   }
  ],
- "notifier": true
+ "notifier": false
 }
