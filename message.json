@@ -1,10 +1,10 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-10-22T06:04:29+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-10-22T16:00:53+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
  "statut": "normal",
  "titre": "Trafic normal",
@@ -13,37 +13,30 @@
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
- "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 76,
-    "temp": 9,
-    "vent": 20,
+    "prob": 50,
+    "temp": 15,
+    "vent": 16,
     "picto": "risque"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
    "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -53,30 +46,30 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 63,
-    "temp": 10,
-    "vent": 22,
+    "prob": 50,
+    "temp": 14,
+    "vent": 15,
     "picto": "risque"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 63,
-    "temp": 10,
-    "vent": 23,
+    "prob": 50,
+    "temp": 14,
+    "vent": 16,
     "picto": "risque"
    }
   }
@@ -84,20 +77,20 @@
  "detail": [],
  "prochains": [
   {
-   "h": "06:04",
-   "dest": "Cergy le Haut"
+   "h": "16:01",
+   "dest": "Juvisy"
   },
   {
-   "h": "06:05",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "16:08",
+   "dest": "Dourdan"
   },
   {
-   "h": "06:12",
-   "dest": "Le Vésinet - Le Pecq"
+   "h": "16:12",
+   "dest": "Saint-Martin d'Étampes"
   },
   {
-   "h": "06:13",
-   "dest": "Poissy"
+   "h": "16:16",
+   "dest": "Juvisy"
   }
  ],
  "notifier": false

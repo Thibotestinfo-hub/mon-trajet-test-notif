@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-21T16:02:57+00:00",
+ "genere": "2026-10-22T16:00:53+00:00",
  "plage": [
   "18h15",
   "19h45"
@@ -25,9 +25,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 57,
-    "temp": 13,
-    "vent": 22,
+    "prob": 50,
+    "temp": 15,
+    "vent": 16,
     "picto": "risque"
    }
   },
@@ -46,9 +46,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 57,
-    "temp": 12,
-    "vent": 22,
+    "prob": 50,
+    "temp": 14,
+    "vent": 15,
     "picto": "risque"
    }
   },
@@ -67,9 +67,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 52,
-    "temp": 12,
-    "vent": 21,
+    "prob": 50,
+    "temp": 14,
+    "vent": 16,
     "picto": "risque"
    }
   }
@@ -77,20 +77,20 @@
  "detail": [],
  "prochains": [
   {
-   "h": "15:37",
+   "h": "16:01",
+   "dest": "Juvisy"
+  },
+  {
+   "h": "16:08",
    "dest": "Dourdan"
   },
   {
-   "h": "15:44",
-   "dest": "Chaville - Vélizy"
+   "h": "16:12",
+   "dest": "Saint-Martin d'Étampes"
   },
   {
-   "h": "15:52",
-   "dest": "Dourdan"
-  },
-  {
-   "h": "16:04",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "16:16",
+   "dest": "Juvisy"
   }
  ],
  "notifier": false
