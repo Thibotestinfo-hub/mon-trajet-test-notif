@@ -1,10 +1,10 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-10-21T16:02:57+00:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-10-22T06:04:29+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
  "statut": "normal",
  "titre": "Trafic normal",
@@ -13,30 +13,37 @@
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
- "departs": null,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 57,
-    "temp": 13,
-    "vent": 22,
+    "prob": 76,
+    "temp": 9,
+    "vent": 20,
     "picto": "risque"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
-   "ligne": "RER C",
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 10,
+   "couleur": "#E2231A"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -46,30 +53,30 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 57,
-    "temp": 12,
+    "prob": 63,
+    "temp": 10,
     "vent": 22,
     "picto": "risque"
    }
   },
   {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
    "etat": "ok",
-   "duree": 11,
-   "couleur": "#E2231A"
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au domicile",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 52,
-    "temp": 12,
-    "vent": 21,
+    "prob": 63,
+    "temp": 10,
+    "vent": 23,
     "picto": "risque"
    }
   }
@@ -77,20 +84,20 @@
  "detail": [],
  "prochains": [
   {
-   "h": "15:37",
-   "dest": "Dourdan"
+   "h": "06:04",
+   "dest": "Cergy le Haut"
   },
   {
-   "h": "15:44",
-   "dest": "Chaville - Vélizy"
+   "h": "06:05",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "15:52",
-   "dest": "Dourdan"
+   "h": "06:12",
+   "dest": "Le Vésinet - Le Pecq"
   },
   {
-   "h": "16:04",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "06:13",
+   "dest": "Poissy"
   }
  ],
  "notifier": false

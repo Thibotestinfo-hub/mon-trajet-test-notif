@@ -1,6 +1,6 @@
 {
- "genere": "2026-10-21T16:02:57+00:00",
- "jour": "2026-10-21",
+ "genere": "2026-10-22T06:04:29+00:00",
+ "jour": "2026-10-22",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1026,7 +1026,7 @@
     },
     {
      "h": "19:13",
-     "dest": "La Défense"
+     "dest": "Rueil-Malmaison"
     },
     {
      "h": "19:15",
@@ -1265,20 +1265,12 @@
      "dest": "Sartrouville"
     },
     {
-     "h": "23:53",
-     "dest": "La Défense"
-    },
-    {
      "h": "23:57",
      "dest": "Saint-Germain-en-Laye"
     },
     {
      "h": "23:59",
      "dest": "La Varenne - Chennevières"
-    },
-    {
-     "h": "00:00",
-     "dest": "La Défense"
     },
     {
      "h": "00:04",
@@ -1695,6 +1687,10 @@
     {
      "h": "17:27",
      "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "17:31",
+     "dest": "Juvisy"
     },
     {
      "h": "17:37",

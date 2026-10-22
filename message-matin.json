@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-21T06:02:01+00:00",
+ "genere": "2026-10-22T06:04:29+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -32,10 +32,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 49,
-    "temp": 11,
-    "vent": 19,
-    "picto": "nuage"
+    "prob": 76,
+    "temp": 9,
+    "vent": 20,
+    "picto": "risque"
    }
   },
   {
@@ -53,10 +53,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 49,
-    "temp": 11,
-    "vent": 20,
-    "picto": "nuage"
+    "prob": 63,
+    "temp": 10,
+    "vent": 22,
+    "picto": "risque"
    }
   },
   {
@@ -74,30 +74,30 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 49,
-    "temp": 12,
-    "vent": 18,
-    "picto": "nuage"
+    "prob": 63,
+    "temp": 10,
+    "vent": 23,
+    "picto": "risque"
    }
   }
  ],
  "detail": [],
  "prochains": [
   {
-   "h": "06:02",
-   "dest": "Poissy"
-  },
-  {
-   "h": "06:03",
-   "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "06:06",
+   "h": "06:04",
    "dest": "Cergy le Haut"
   },
   {
-   "h": "06:06",
+   "h": "06:05",
    "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "06:12",
+   "dest": "Le Vésinet - Le Pecq"
+  },
+  {
+   "h": "06:13",
+   "dest": "Poissy"
   }
  ],
  "notifier": false
