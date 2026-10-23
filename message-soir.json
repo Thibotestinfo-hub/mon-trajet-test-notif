@@ -1,18 +1,20 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-22T16:00:53+00:00",
+ "genere": "2026-10-23T16:00:50+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER A perturbé",
+ "lignes": [
+  "RER A"
+ ],
+ "message": "RER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied\nRER C : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
  "arbitrage": null,
- "a_confirmer": false,
- "retard_mn": 0,
+ "a_confirmer": true,
+ "retard_mn": 8,
  "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
@@ -25,16 +27,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 50,
-    "temp": 15,
-    "vent": 16,
+    "prob": 100,
+    "temp": 12,
+    "vent": 30,
     "picto": "risque"
    }
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "amont",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -46,16 +48,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 50,
-    "temp": 14,
-    "vent": 15,
+    "prob": 100,
+    "temp": 11,
+    "vent": 28,
     "picto": "risque"
    }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
    "ligne": "RER A",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 11,
    "couleur": "#E2231A"
   },
@@ -67,31 +69,34 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 50,
-    "temp": 14,
-    "vent": 16,
+    "prob": 100,
+    "temp": 11,
+    "vent": 27,
     "picto": "risque"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "Date : Vendredi 23/10 En prévision du passage de la tempête Austen et face aux risques de vents violents, SNCF Réseau, gestionnaire du réseau ferré national, pourrait suspendre préventivement les circulations et/ou de li",
+  "La gare de Savigny-sur-Orge en direction de Brétigny n'est pas desservie jusqu'à 18h20. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C . Motif : obstacle sur la voie."
+ ],
  "prochains": [
+  {
+   "h": "15:42",
+   "dest": "Saint-Martin d'Étampes"
+  },
+  {
+   "h": "15:57",
+   "dest": "Saint-Martin d'Étampes"
+  },
   {
    "h": "16:01",
    "dest": "Juvisy"
   },
   {
-   "h": "16:08",
-   "dest": "Dourdan"
-  },
-  {
-   "h": "16:12",
-   "dest": "Saint-Martin d'Étampes"
-  },
-  {
-   "h": "16:16",
+   "h": "16:06",
    "dest": "Juvisy"
   }
  ],
- "notifier": false
+ "notifier": true
 }

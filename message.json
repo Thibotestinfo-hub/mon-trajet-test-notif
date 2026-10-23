@@ -1,107 +1,101 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-10-23T05:58:58+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-10-23T16:00:50+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
  "statut": "perturbe",
  "titre": "RER A perturbé",
  "lignes": [
   "RER A"
  ],
- "message": "RER A perturbé sur votre tronçon.\n→ M1 à Bérault (8 mn à pied) jusqu'à Gare de Lyon\n\nPluie annoncée sur la passerelle : 0,3 mm, 74 % de risque.\n→ le détour par le B n'est pas praticable aujourd'hui. Prenez un parapluie.",
+ "message": "RER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied\nRER C : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
  "arbitrage": null,
- "a_confirmer": false,
+ "a_confirmer": true,
  "retard_mn": 8,
- "departs": {
-  "confort": "08h15",
-  "tard": "08h30",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
- "pluie_mm": 0.3,
+ "departs": null,
+ "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
-   "ligne": null,
-   "etat": "ok",
-   "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.3,
-    "prob": 76,
-    "temp": 13,
-    "vent": 33,
-    "picto": "pluie"
-   }
-  },
-  {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ko",
-   "duree": 10,
-   "couleur": "#E2231A"
-  },
-  {
-   "nom": "Passerelle Charles-de-Gaulle",
-   "ligne": null,
-   "etat": "pluie",
-   "duree": 10,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.3,
-    "prob": 74,
-    "temp": 13,
-    "vent": 36,
-    "picto": "pluie"
-   }
-  },
-  {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
-   "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
-  },
-  {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
    "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.3,
-    "prob": 74,
-    "temp": 13,
-    "vent": 35,
-    "picto": "pluie"
+    "mm": 0.0,
+    "prob": 100,
+    "temp": 12,
+    "vent": 30,
+    "picto": "risque"
+   }
+  },
+  {
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "amont",
+   "duree": 19,
+   "couleur": "#FFCE00"
+  },
+  {
+   "nom": "Passerelle Charles-de-Gaulle",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 100,
+    "temp": 11,
+    "vent": 28,
+    "picto": "risque"
+   }
+  },
+  {
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
+   "etat": "ko",
+   "duree": 11,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Marche jusqu'au domicile",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 5,
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 100,
+    "temp": 11,
+    "vent": 27,
+    "picto": "risque"
    }
   }
  ],
  "detail": [
-  "Date : Vendredi 23/10 En prévision du passage de la tempête Austen et face aux risques de vents violents, SNCF Réseau, gestionnaire du réseau ferré national, pourrait suspendre préventivement les circulations et/ou de li"
+  "Date : Vendredi 23/10 En prévision du passage de la tempête Austen et face aux risques de vents violents, SNCF Réseau, gestionnaire du réseau ferré national, pourrait suspendre préventivement les circulations et/ou de li",
+  "La gare de Savigny-sur-Orge en direction de Brétigny n'est pas desservie jusqu'à 18h20. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C . Motif : obstacle sur la voie."
  ],
  "prochains": [
   {
-   "h": "05:35",
-   "dest": "Rueil-Malmaison"
+   "h": "15:42",
+   "dest": "Saint-Martin d'Étampes"
   },
   {
-   "h": "05:46",
-   "dest": "Le Vésinet - Le Pecq"
+   "h": "15:57",
+   "dest": "Saint-Martin d'Étampes"
   },
   {
-   "h": "05:58",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "16:01",
+   "dest": "Juvisy"
   },
   {
-   "h": "06:00",
-   "dest": "Poissy"
+   "h": "16:06",
+   "dest": "Juvisy"
   }
  ],
  "notifier": true
