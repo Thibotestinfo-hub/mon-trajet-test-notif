@@ -1,49 +1,42 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-10-26T07:01:44+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-10-26T17:00:19+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
+ "statut": "amont",
+ "titre": "Incident en amont",
  "lignes": [],
- "message": "",
+ "message": "RER C : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
- "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 9,
-    "vent": 11,
+    "prob": 13,
+    "temp": 13,
+    "vent": 14,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "amont",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -53,52 +46,54 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
-    "temp": 9,
-    "vent": 12,
+    "prob": 18,
+    "temp": 13,
+    "vent": 14,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
-    "temp": 10,
-    "vent": 15,
+    "prob": 8,
+    "temp": 13,
+    "vent": 14,
     "picto": "soleil"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "La gare de Saint-Martin d'Étampes n'est pas desservie jusqu'à 23h59 et le trafic est perturbé entre Juvisy et Étampes dans les 2 sens. Rendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire pren"
+ ],
  "prochains": [
   {
-   "h": "06:46",
-   "dest": "Le Vésinet - Le Pecq"
+   "h": "17:01",
+   "dest": "Juvisy"
   },
   {
-   "h": "06:49",
-   "dest": "La Défense"
+   "h": "17:04",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "07:01",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:07",
+   "dest": "Dourdan"
   },
   {
-   "h": "07:03",
-   "dest": "Cergy le Haut"
+   "h": "17:10",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
- "notifier": false
+ "notifier": true
 }
