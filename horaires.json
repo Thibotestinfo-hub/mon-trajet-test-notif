@@ -1,6 +1,6 @@
 {
- "genere": "2026-10-23T16:00:50+00:00",
- "jour": "2026-10-23",
+ "genere": "2026-10-26T07:01:44+00:00",
+ "jour": "2026-10-26",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1026,7 +1026,7 @@
     },
     {
      "h": "19:13",
-     "dest": "Rueil-Malmaison"
+     "dest": "La Défense"
     },
     {
      "h": "19:15",
@@ -1150,7 +1150,7 @@
     },
     {
      "h": "21:12",
-     "dest": "Poissy"
+     "dest": "Cergy le Haut"
     },
     {
      "h": "21:17",
@@ -1158,7 +1158,7 @@
     },
     {
      "h": "21:22",
-     "dest": "Cergy le Haut"
+     "dest": "Poissy"
     },
     {
      "h": "21:30",
@@ -1265,12 +1265,20 @@
      "dest": "Sartrouville"
     },
     {
+     "h": "23:53",
+     "dest": "La Défense"
+    },
+    {
      "h": "23:57",
      "dest": "Saint-Germain-en-Laye"
     },
     {
      "h": "23:59",
      "dest": "La Varenne - Chennevières"
+    },
+    {
+     "h": "00:00",
+     "dest": "La Défense"
     },
     {
      "h": "00:04",
@@ -1341,6 +1349,10 @@
      "dest": "Juvisy"
     },
     {
+     "h": "06:07",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
      "h": "06:14",
      "dest": "Juvisy"
     },
@@ -1382,7 +1394,7 @@
     },
     {
      "h": "07:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "07:44",
@@ -1390,7 +1402,7 @@
     },
     {
      "h": "07:52",
-     "dest": "Brétigny"
+     "dest": "Dourdan la Forêt"
     },
     {
      "h": "07:59",
@@ -1398,7 +1410,7 @@
     },
     {
      "h": "08:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "08:13",
@@ -1410,7 +1422,7 @@
     },
     {
      "h": "08:22",
-     "dest": "Brétigny"
+     "dest": "Dourdan la Forêt"
     },
     {
      "h": "08:29",
@@ -1418,7 +1430,7 @@
     },
     {
      "h": "08:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "08:43",
@@ -1430,7 +1442,7 @@
     },
     {
      "h": "08:52",
-     "dest": "Brétigny"
+     "dest": "Dourdan la Forêt"
     },
     {
      "h": "08:58",
@@ -1442,7 +1454,7 @@
     },
     {
      "h": "09:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "09:13",
@@ -1454,7 +1466,7 @@
     },
     {
      "h": "09:21",
-     "dest": "Brétigny"
+     "dest": "Dourdan la Forêt"
     },
     {
      "h": "09:28",
@@ -1466,7 +1478,7 @@
     },
     {
      "h": "09:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "09:44",
@@ -1474,7 +1486,7 @@
     },
     {
      "h": "09:51",
-     "dest": "Brétigny"
+     "dest": "Dourdan la Forêt"
     },
     {
      "h": "09:58",
@@ -1482,7 +1494,7 @@
     },
     {
      "h": "10:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "10:13",
@@ -1494,7 +1506,7 @@
     },
     {
      "h": "10:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "10:43",
@@ -1506,7 +1518,7 @@
     },
     {
      "h": "11:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "11:13",
@@ -1518,7 +1530,7 @@
     },
     {
      "h": "11:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "11:43",
@@ -1530,7 +1542,7 @@
     },
     {
      "h": "12:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "12:13",
@@ -1542,7 +1554,7 @@
     },
     {
      "h": "12:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "12:43",
@@ -1554,7 +1566,7 @@
     },
     {
      "h": "13:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "13:13",
@@ -1566,7 +1578,7 @@
     },
     {
      "h": "13:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "13:43",
@@ -1578,7 +1590,7 @@
     },
     {
      "h": "14:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "14:13",
@@ -1590,7 +1602,7 @@
     },
     {
      "h": "14:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "14:43",
@@ -1642,7 +1654,7 @@
     },
     {
      "h": "16:37",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "16:42",
@@ -1654,7 +1666,7 @@
     },
     {
      "h": "16:52",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "16:57",
@@ -1666,7 +1678,7 @@
     },
     {
      "h": "17:07",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "17:12",
@@ -1678,7 +1690,7 @@
     },
     {
      "h": "17:22",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "17:27",
@@ -1690,7 +1702,7 @@
     },
     {
      "h": "17:37",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "17:42",
@@ -1702,7 +1714,7 @@
     },
     {
      "h": "17:52",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "17:57",
@@ -1714,7 +1726,7 @@
     },
     {
      "h": "18:07",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "18:12",
@@ -1726,7 +1738,7 @@
     },
     {
      "h": "18:22",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "18:27",
@@ -1738,7 +1750,7 @@
     },
     {
      "h": "18:37",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "18:46",
@@ -1746,7 +1758,7 @@
     },
     {
      "h": "18:52",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "18:59",
@@ -1754,7 +1766,7 @@
     },
     {
      "h": "19:07",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "19:14",
@@ -1762,7 +1774,7 @@
     },
     {
      "h": "19:22",
-     "dest": "Brétigny"
+     "dest": "Dourdan"
     },
     {
      "h": "19:28",

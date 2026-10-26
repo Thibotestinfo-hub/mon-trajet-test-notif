@@ -1,44 +1,49 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-10-23T16:00:50+00:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-10-26T07:01:44+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
- "statut": "perturbe",
- "titre": "RER A perturbé",
- "lignes": [
-  "RER A"
- ],
- "message": "RER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied\nRER C : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
- "a_confirmer": true,
- "retard_mn": 8,
- "departs": null,
+ "a_confirmer": false,
+ "retard_mn": 0,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 100,
-    "temp": 12,
-    "vent": 30,
-    "picto": "risque"
+    "prob": 0,
+    "temp": 9,
+    "vent": 11,
+    "picto": "soleil"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
-   "ligne": "RER C",
-   "etat": "amont",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#E2231A"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -48,55 +53,52 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 100,
-    "temp": 11,
-    "vent": 28,
-    "picto": "risque"
+    "prob": 3,
+    "temp": 9,
+    "vent": 12,
+    "picto": "soleil"
    }
   },
   {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
-   "etat": "ko",
-   "duree": 11,
-   "couleur": "#E2231A"
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
+   "etat": "ok",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au domicile",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 100,
-    "temp": 11,
-    "vent": 27,
-    "picto": "risque"
+    "prob": 3,
+    "temp": 10,
+    "vent": 15,
+    "picto": "soleil"
    }
   }
  ],
- "detail": [
-  "Date : Vendredi 23/10 En prévision du passage de la tempête Austen et face aux risques de vents violents, SNCF Réseau, gestionnaire du réseau ferré national, pourrait suspendre préventivement les circulations et/ou de li",
-  "La gare de Savigny-sur-Orge en direction de Brétigny n'est pas desservie jusqu'à 18h20. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C . Motif : obstacle sur la voie."
- ],
+ "detail": [],
  "prochains": [
   {
-   "h": "15:42",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "06:46",
+   "dest": "Le Vésinet - Le Pecq"
   },
   {
-   "h": "15:57",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "06:49",
+   "dest": "La Défense"
   },
   {
-   "h": "16:01",
-   "dest": "Juvisy"
+   "h": "07:01",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "16:06",
-   "dest": "Juvisy"
+   "h": "07:03",
+   "dest": "Cergy le Haut"
   }
  ],
- "notifier": true
+ "notifier": false
 }
