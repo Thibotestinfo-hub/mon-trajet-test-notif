@@ -1,20 +1,22 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-26T17:00:19+00:00",
+ "genere": "2026-10-27T17:03:36+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "amont",
- "titre": "Incident en amont",
- "lignes": [],
- "message": "RER C : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": null,
- "pluie_mm": 0.0,
+ "pluie_mm": null,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -22,19 +24,12 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 13,
-    "temp": 13,
-    "vent": 14,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
    "ligne": "RER C",
-   "etat": "amont",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -43,14 +38,7 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 18,
-    "temp": 13,
-    "vent": 14,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   },
   {
    "nom": "Gare de Lyon → Vincennes",
@@ -64,35 +52,28 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 8,
-    "temp": 13,
-    "vent": 14,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   }
  ],
  "detail": [
-  "La gare de Saint-Martin d'Étampes n'est pas desservie jusqu'à 23h59 et le trafic est perturbé entre Juvisy et Étampes dans les 2 sens. Rendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire pren"
+  "Le trafic est perturbé de Paris Austerlitz vers Saint-Martin d'Étampes et de Paris Austerlitz vers Dourdan. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C . Motif : malaise voyageur (à bord "
  ],
  "prochains": [
   {
-   "h": "17:01",
+   "h": "17:06",
    "dest": "Juvisy"
   },
   {
-   "h": "17:04",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "17:09",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
-   "h": "17:07",
+   "h": "17:12",
    "dest": "Dourdan"
   },
   {
-   "h": "17:10",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "17:12",
+   "dest": "Saint-Martin d'Étampes"
   }
  ],
  "notifier": true
