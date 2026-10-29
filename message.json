@@ -1,49 +1,44 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-10-29T06:59:34+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-10-29T17:02:26+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
- "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
+ "retard_mn": 10,
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 9,
-    "vent": 4,
+    "temp": 13,
+    "vent": 11,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "ko",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -54,51 +49,53 @@
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 10,
-    "vent": 3,
+    "temp": 12,
+    "vent": 11,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 10,
-    "vent": 4,
+    "temp": 12,
+    "vent": 11,
     "picto": "soleil"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "Le trafic est perturbé de Paris Austerlitz vers Dourdan La Forêt et de Paris Austerlitz vers Saint-Martin d'Étampes. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C . Motif : présence de pers"
+ ],
  "prochains": [
   {
-   "h": "07:00",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:06",
+   "dest": "Versailles ChÃ¢teau Rive Gauche"
   },
   {
-   "h": "07:06",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:11",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
-   "h": "07:12",
-   "dest": "Le Vésinet - Le Pecq"
+   "h": "17:12",
+   "dest": "Saint-Martin d'Ã‰tampes"
   },
   {
-   "h": "07:15",
-   "dest": "La Défense"
+   "h": "17:17",
+   "dest": "Juvisy"
   }
  ],
- "notifier": false
+ "notifier": true
 }

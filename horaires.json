@@ -1,5 +1,5 @@
 {
- "genere": "2026-10-29T06:59:34+00:00",
+ "genere": "2026-10-29T17:02:26+00:00",
  "jour": "2026-10-29",
  "arrets": {
   "matin": {
@@ -1449,68 +1449,180 @@
      "dest": "Dourdan"
     },
     {
+     "h": "16:57",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "17:01",
+     "dest": "Juvisy"
+    },
+    {
      "h": "17:07",
      "dest": "Dourdan"
+    },
+    {
+     "h": "17:12",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "17:16",
+     "dest": "Juvisy"
     },
     {
      "h": "17:22",
      "dest": "Dourdan"
     },
     {
+     "h": "17:27",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "17:31",
+     "dest": "Juvisy"
+    },
+    {
      "h": "17:37",
      "dest": "Dourdan"
+    },
+    {
+     "h": "17:42",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "17:46",
+     "dest": "Juvisy"
     },
     {
      "h": "17:52",
      "dest": "Dourdan"
     },
     {
+     "h": "17:57",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "18:01",
+     "dest": "Juvisy"
+    },
+    {
      "h": "18:07",
      "dest": "Dourdan"
+    },
+    {
+     "h": "18:12",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "18:16",
+     "dest": "Juvisy"
     },
     {
      "h": "18:22",
      "dest": "Dourdan"
     },
     {
+     "h": "18:27",
+     "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "18:31",
+     "dest": "Juvisy"
+    },
+    {
      "h": "18:37",
      "dest": "Dourdan"
+    },
+    {
+     "h": "18:46",
+     "dest": "Juvisy"
     },
     {
      "h": "18:52",
      "dest": "Dourdan"
     },
     {
+     "h": "18:59",
+     "dest": "Juvisy"
+    },
+    {
      "h": "19:07",
      "dest": "Dourdan"
+    },
+    {
+     "h": "19:14",
+     "dest": "Juvisy"
     },
     {
      "h": "19:22",
      "dest": "Dourdan"
     },
     {
+     "h": "19:28",
+     "dest": "Juvisy"
+    },
+    {
      "h": "19:37",
      "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "19:43",
+     "dest": "Juvisy"
+    },
+    {
+     "h": "19:58",
+     "dest": "Juvisy"
     },
     {
      "h": "20:07",
      "dest": "Saint-Martin d'Étampes"
     },
     {
+     "h": "20:14",
+     "dest": "Juvisy"
+    },
+    {
+     "h": "20:28",
+     "dest": "Juvisy"
+    },
+    {
      "h": "20:37",
      "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "20:43",
+     "dest": "Juvisy"
     },
     {
      "h": "21:07",
      "dest": "Saint-Martin d'Étampes"
     },
     {
+     "h": "21:13",
+     "dest": "Juvisy"
+    },
+    {
      "h": "21:37",
      "dest": "Saint-Martin d'Étampes"
     },
     {
+     "h": "21:43",
+     "dest": "Juvisy"
+    },
+    {
      "h": "22:07",
      "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "22:13",
+     "dest": "Juvisy"
+    },
+    {
+     "h": "22:44",
+     "dest": "Javel"
+    },
+    {
+     "h": "23:07",
+     "dest": "Gare d'Austerlitz"
     }
    ]
   }
