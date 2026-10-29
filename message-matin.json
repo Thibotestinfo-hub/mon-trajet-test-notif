@@ -1,15 +1,15 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-28T06:59:48+00:00",
+ "genere": "2026-10-29T06:59:34+00:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "amont",
- "titre": "Incident en amont",
+ "statut": "normal",
+ "titre": "Trafic normal",
  "lignes": [],
- "message": "RER C : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.\nÀ Vincennes RER, un trou de 23 mn est annoncé entre deux passages.",
+ "message": "",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
@@ -34,7 +34,7 @@
     "mm": 0.0,
     "prob": 0,
     "temp": 9,
-    "vent": 3,
+    "vent": 4,
     "picto": "soleil"
    }
   },
@@ -55,14 +55,14 @@
     "mm": 0.0,
     "prob": 0,
     "temp": 10,
-    "vent": 4,
+    "vent": 3,
     "picto": "soleil"
    }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "amont",
+   "etat": "ok",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -76,31 +76,29 @@
     "mm": 0.0,
     "prob": 0,
     "temp": 10,
-    "vent": 5,
+    "vent": 4,
     "picto": "soleil"
    }
   }
  ],
- "detail": [
-  "Les gares de Villeneuve-le-Roi, Ablon et Athis-Mons en direction de Paris ne sont pas desservies jusqu'à 10h et le trafic est perturbé sur le reste de la ligne. Rendez-vous sur la rubrique \"Recherche Itinéraire\", pour re"
- ],
+ "detail": [],
  "prochains": [
   {
-   "h": "06:35",
-   "dest": "Rueil-Malmaison"
-  },
-  {
-   "h": "06:58",
-   "dest": "Poissy"
-  },
-  {
-   "h": "06:59",
-   "dest": "Rueil-Malmaison"
-  },
-  {
-   "h": "07:01",
+   "h": "07:00",
    "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "07:06",
+   "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "07:12",
+   "dest": "Le Vésinet - Le Pecq"
+  },
+  {
+   "h": "07:15",
+   "dest": "La Défense"
   }
  ],
- "notifier": true
+ "notifier": false
 }
