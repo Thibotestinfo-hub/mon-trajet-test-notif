@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-29T17:02:26+00:00",
+ "genere": "2026-10-30T17:01:49+00:00",
  "plage": [
   "18h15",
   "19h45"
@@ -16,7 +16,7 @@
  "a_confirmer": false,
  "retard_mn": 10,
  "departs": null,
- "pluie_mm": 0.0,
+ "pluie_mm": null,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -24,14 +24,7 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 0,
-    "temp": 13,
-    "vent": 11,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
@@ -45,14 +38,7 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 0,
-    "temp": 12,
-    "vent": 11,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   },
   {
    "nom": "Gare de Lyon → Vincennes",
@@ -66,34 +52,27 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 0,
-    "temp": 12,
-    "vent": 11,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   }
  ],
  "detail": [
-  "Le trafic est perturbé de Paris Austerlitz vers Dourdan La Forêt et de Paris Austerlitz vers Saint-Martin d'Étampes. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C . Motif : présence de pers"
+  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :"
  ],
  "prochains": [
   {
-   "h": "17:06",
-   "dest": "Versailles ChÃ¢teau Rive Gauche"
+   "h": "16:57",
+   "dest": "Étampes"
   },
   {
-   "h": "17:11",
+   "h": "17:03",
+   "dest": "Versailles Château Rive Gauche"
+  },
+  {
+   "h": "17:09",
    "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
    "h": "17:12",
-   "dest": "Saint-Martin d'Ã‰tampes"
-  },
-  {
-   "h": "17:17",
    "dest": "Juvisy"
   }
  ],
