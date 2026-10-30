@@ -1,24 +1,26 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-29T06:59:34+00:00",
+ "genere": "2026-10-30T07:00:19+00:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
+  "confort": null,
+  "tard": "08h28",
   "cible_confort": "09h15",
   "cible_tard": "09h30",
-  "confort_perdu": false,
+  "confort_perdu": true,
   "intenable": false
  },
  "pluie_mm": 0.0,
@@ -33,8 +35,8 @@
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 9,
-    "vent": 4,
+    "temp": 6,
+    "vent": 10,
     "picto": "soleil"
    }
   },
@@ -54,15 +56,15 @@
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 10,
-    "vent": 3,
+    "temp": 7,
+    "vent": 8,
     "picto": "soleil"
    }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -75,30 +77,32 @@
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 10,
-    "vent": 4,
+    "temp": 8,
+    "vent": 7,
     "picto": "soleil"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :"
+ ],
  "prochains": [
   {
-   "h": "07:00",
+   "h": "07:01",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:06",
+   "h": "07:03",
+   "dest": "Cergy le Haut"
+  },
+  {
+   "h": "07:05",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:12",
-   "dest": "Le Vésinet - Le Pecq"
-  },
-  {
-   "h": "07:15",
-   "dest": "La Défense"
+   "h": "07:07",
+   "dest": "Poissy"
   }
  ],
- "notifier": false
+ "notifier": true
 }
