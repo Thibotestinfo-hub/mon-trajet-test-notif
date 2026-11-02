@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-10-30T17:01:49+00:00",
+ "genere": "2026-11-02T17:20:33+00:00",
  "plage": [
   "18h15",
   "19h45"
@@ -60,19 +60,19 @@
  ],
  "prochains": [
   {
-   "h": "16:57",
-   "dest": "Étampes"
+   "h": "17:22",
+   "dest": "Dourdan"
   },
   {
-   "h": "17:03",
-   "dest": "Versailles Château Rive Gauche"
-  },
-  {
-   "h": "17:09",
+   "h": "17:26",
    "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
-   "h": "17:12",
+   "h": "17:27",
+   "dest": "Saint-Martin d'Étampes"
+  },
+  {
+   "h": "17:32",
    "dest": "Juvisy"
   }
  ],
