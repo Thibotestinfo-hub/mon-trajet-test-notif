@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-10-30T07:00:19+00:00",
+ "genere": "2026-11-02T07:02:38+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -11,7 +11,7 @@
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine\nRER A : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
@@ -34,16 +34,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 6,
-    "vent": 10,
+    "prob": 3,
+    "temp": 8,
+    "vent": 9,
     "picto": "soleil"
    }
   },
   {
    "nom": "Vincennes → Gare de Lyon",
    "ligne": "RER A",
-   "etat": "ok",
+   "etat": "amont",
    "duree": 10,
    "couleur": "#E2231A"
   },
@@ -55,9 +55,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 7,
-    "vent": 8,
+    "prob": 5,
+    "temp": 9,
+    "vent": 9,
     "picto": "soleil"
    }
   },
@@ -76,32 +76,33 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 8,
-    "vent": 7,
+    "prob": 10,
+    "temp": 9,
+    "vent": 9,
     "picto": "soleil"
    }
   }
  ],
  "detail": [
-  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :"
+  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :",
+  "Le trafic est interrompu entre Maisons-Laffitte et Achères-Ville dans les 2 sens jusqu'à 10h et perturbé sur le reste de la ligne. Pour plus d'informations sur cette perturbation, consultez le fil X du RER A . Motif : al"
  ],
  "prochains": [
   {
-   "h": "07:01",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "06:49",
+   "dest": "La Défense"
   },
   {
-   "h": "07:03",
-   "dest": "Cergy le Haut"
+   "h": "06:56",
+   "dest": "Nanterre Préfecture"
+  },
+  {
+   "h": "07:00",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
    "h": "07:05",
-   "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "07:07",
-   "dest": "Poissy"
+   "dest": "Cergy le Haut"
   }
  ],
  "notifier": true
