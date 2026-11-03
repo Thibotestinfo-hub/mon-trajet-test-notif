@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-02T17:20:33+00:00",
- "jour": "2026-11-02",
+ "genere": "2026-11-03T06:59:59+00:00",
+ "jour": "2026-11-03",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1153,12 +1153,20 @@
      "dest": "Cergy le Haut"
     },
     {
+     "h": "21:12",
+     "dest": "Nanterre - Préfecture"
+    },
+    {
      "h": "21:17",
      "dest": "Saint-Germain-en-Laye"
     },
     {
      "h": "21:22",
      "dest": "Poissy"
+    },
+    {
+     "h": "21:22",
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "21:30",
@@ -1173,8 +1181,12 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "21:52",
+     "h": "21:51",
      "dest": "Sartrouville"
+    },
+    {
+     "h": "21:52",
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "21:58",
@@ -1189,8 +1201,12 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "22:20",
+     "h": "22:19",
      "dest": "Sartrouville"
+    },
+    {
+     "h": "22:20",
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "22:27",
@@ -1205,8 +1221,12 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "22:50",
+     "h": "22:49",
      "dest": "Sartrouville"
+    },
+    {
+     "h": "22:50",
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "22:57",
@@ -1221,8 +1241,12 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "23:20",
+     "h": "23:19",
      "dest": "Sartrouville"
+    },
+    {
+     "h": "23:20",
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "23:27",
@@ -1238,7 +1262,7 @@
     },
     {
      "h": "23:50",
-     "dest": "Sartrouville"
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "23:57",
@@ -1254,7 +1278,7 @@
     },
     {
      "h": "00:16",
-     "dest": "Sartrouville"
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "00:23",
@@ -1269,8 +1293,12 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "00:46",
+     "h": "00:45",
      "dest": "Sartrouville"
+    },
+    {
+     "h": "00:46",
+     "dest": "Nanterre - Préfecture"
     },
     {
      "h": "00:53",
