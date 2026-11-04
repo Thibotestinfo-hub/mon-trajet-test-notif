@@ -1,51 +1,44 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-11-04T06:59:15+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-11-04T17:00:56+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
  "statut": "perturbe",
  "titre": "RER C perturbé",
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
- "departs": {
-  "confort": null,
-  "tard": "08h28",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": true,
-  "intenable": false
- },
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 4,
-    "vent": 15,
+    "prob": 3,
+    "temp": 10,
+    "vent": 12,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "ko",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -55,30 +48,30 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 5,
-    "vent": 14,
+    "prob": 3,
+    "temp": 9,
+    "vent": 11,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
-   "etat": "ko",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 5,
-    "vent": 13,
+    "prob": 3,
+    "temp": 8,
+    "vent": 11,
     "picto": "soleil"
    }
   }
@@ -88,20 +81,20 @@
  ],
  "prochains": [
   {
-   "h": "06:58",
-   "dest": "Poissy"
+   "h": "17:03",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "06:59",
-   "dest": "Rueil-Malmaison"
+   "h": "17:07",
+   "dest": "Dourdan"
   },
   {
-   "h": "07:01",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:09",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
-   "h": "07:03",
-   "dest": "Cergy le Haut"
+   "h": "17:23",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
  "notifier": true

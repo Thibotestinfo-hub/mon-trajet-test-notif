@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-03T17:00:11+00:00",
+ "genere": "2026-11-04T17:00:56+00:00",
  "plage": [
   "18h15",
   "19h45"
@@ -11,7 +11,7 @@
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\nM1 : incident ailleurs sur la ligne. Votre gare n'est pas citée, mais votre train peut être retardé.",
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
@@ -27,9 +27,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 9,
-    "vent": 14,
+    "prob": 3,
+    "temp": 10,
+    "vent": 12,
     "picto": "soleil"
    }
   },
@@ -48,9 +48,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
+    "prob": 3,
     "temp": 9,
-    "vent": 12,
+    "vent": 11,
     "picto": "soleil"
    }
   },
@@ -69,24 +69,19 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
+    "prob": 3,
     "temp": 8,
-    "vent": 12,
+    "vent": 11,
     "picto": "soleil"
    }
   }
  ],
  "detail": [
-  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :",
-  "Le trafic est interrompu entre Charles de Gaulle – Étoile et Esplanade de la Défense en raison d'un incident technique sur un train à Porte Maillot. Reprise estimée : 18:30. Veuillez emprunter des itinéraires alternatifs"
+  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :"
  ],
  "prochains": [
   {
-   "h": "17:01",
-   "dest": "Juvisy"
-  },
-  {
-   "h": "17:02",
+   "h": "17:03",
    "dest": "Versailles Château Rive Gauche"
   },
   {
@@ -94,7 +89,11 @@
    "dest": "Dourdan"
   },
   {
-   "h": "17:11",
+   "h": "17:09",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+  },
+  {
+   "h": "17:23",
    "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
