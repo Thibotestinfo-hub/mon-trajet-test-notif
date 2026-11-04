@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-03T06:59:59+00:00",
+ "genere": "2026-11-04T06:59:15+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -34,9 +34,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
-    "temp": 8,
-    "vent": 13,
+    "prob": 0,
+    "temp": 4,
+    "vent": 15,
     "picto": "soleil"
    }
   },
@@ -55,9 +55,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
-    "temp": 8,
-    "vent": 12,
+    "prob": 0,
+    "temp": 5,
+    "vent": 14,
     "picto": "soleil"
    }
   },
@@ -76,9 +76,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 15,
-    "temp": 8,
-    "vent": 14,
+    "prob": 0,
+    "temp": 5,
+    "vent": 13,
     "picto": "soleil"
    }
   }
@@ -88,19 +88,19 @@
  ],
  "prochains": [
   {
-   "h": "06:32",
+   "h": "06:58",
    "dest": "Poissy"
   },
   {
-   "h": "06:48",
+   "h": "06:59",
    "dest": "Rueil-Malmaison"
   },
   {
-   "h": "06:49",
-   "dest": "La Défense"
+   "h": "07:01",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "06:51",
+   "h": "07:03",
    "dest": "Cergy le Haut"
   }
  ],

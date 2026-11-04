@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-03T17:00:11+00:00",
- "jour": "2026-11-03",
+ "genere": "2026-11-04T06:59:15+00:00",
+ "jour": "2026-11-04",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1150,19 +1150,11 @@
     },
     {
      "h": "21:12",
-     "dest": "Cergy le Haut"
-    },
-    {
-     "h": "21:12",
      "dest": "Nanterre - Préfecture"
     },
     {
      "h": "21:17",
      "dest": "Saint-Germain-en-Laye"
-    },
-    {
-     "h": "21:22",
-     "dest": "Poissy"
     },
     {
      "h": "21:22",
@@ -1181,10 +1173,6 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "21:51",
-     "dest": "Sartrouville"
-    },
-    {
      "h": "21:52",
      "dest": "Nanterre - Préfecture"
     },
@@ -1199,10 +1187,6 @@
     {
      "h": "22:12",
      "dest": "Saint-Germain-en-Laye"
-    },
-    {
-     "h": "22:19",
-     "dest": "Sartrouville"
     },
     {
      "h": "22:20",
@@ -1221,10 +1205,6 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "22:49",
-     "dest": "Sartrouville"
-    },
-    {
      "h": "22:50",
      "dest": "Nanterre - Préfecture"
     },
@@ -1239,10 +1219,6 @@
     {
      "h": "23:12",
      "dest": "Saint-Germain-en-Laye"
-    },
-    {
-     "h": "23:19",
-     "dest": "Sartrouville"
     },
     {
      "h": "23:20",
@@ -1291,10 +1267,6 @@
     {
      "h": "00:35",
      "dest": "Saint-Germain-en-Laye"
-    },
-    {
-     "h": "00:45",
-     "dest": "Sartrouville"
     },
     {
      "h": "00:46",
