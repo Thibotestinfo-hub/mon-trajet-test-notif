@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-04T06:59:15+00:00",
+ "genere": "2026-11-05T06:59:42+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -34,9 +34,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 4,
-    "vent": 15,
+    "prob": 13,
+    "temp": 5,
+    "vent": 11,
     "picto": "soleil"
    }
   },
@@ -55,9 +55,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
+    "prob": 13,
     "temp": 5,
-    "vent": 14,
+    "vent": 10,
     "picto": "soleil"
    }
   },
@@ -76,32 +76,32 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 5,
-    "vent": 13,
+    "prob": 8,
+    "temp": 6,
+    "vent": 9,
     "picto": "soleil"
    }
   }
  ],
  "detail": [
-  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :"
+  "Le 05 novembre, la gare d'Invalides n'est pas desservie à partir de 11h00 jusqu'à nouvel ordre. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C. Motif : Mesures de sécurité (arrêté préfectora"
  ],
  "prochains": [
   {
-   "h": "06:58",
-   "dest": "Poissy"
-  },
-  {
-   "h": "06:59",
+   "h": "06:35",
    "dest": "Rueil-Malmaison"
   },
   {
-   "h": "07:01",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "06:51",
+   "dest": "La Défense"
   },
   {
-   "h": "07:03",
-   "dest": "Cergy le Haut"
+   "h": "06:56",
+   "dest": "Poissy"
+  },
+  {
+   "h": "06:57",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
  "notifier": true
