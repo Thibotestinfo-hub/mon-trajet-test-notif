@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-04T17:00:56+00:00",
+ "genere": "2026-11-05T17:01:33+00:00",
  "plage": [
   "18h15",
   "19h45"
@@ -11,12 +11,12 @@
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\nÀ Issy-Val-de-Seine, un trou de 21 mn est annoncé entre deux passages.",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
  "departs": null,
- "pluie_mm": 0.0,
+ "pluie_mm": null,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -24,14 +24,7 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 3,
-    "temp": 10,
-    "vent": 12,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
@@ -45,14 +38,7 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 3,
-    "temp": 9,
-    "vent": 11,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   },
   {
    "nom": "Gare de Lyon → Vincennes",
@@ -66,34 +52,27 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 3,
-    "temp": 8,
-    "vent": 11,
-    "picto": "soleil"
-   }
+   "couleur": "#8a8f98"
   }
  ],
  "detail": [
-  "Prévoir un allongement de temps de trajet de 20 minutes environ pour les bus de nuit à destination de Saint-Martin-D'Etampes. Pour plus d'informations sur cette perturbation, consultez le fil Twitter de la ligne. Motif :"
+  "La gare des Invalides n'est pas desservie jusqu'à nouvel avis. Rendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire prenant en compte cette perturbation. Pour plus d'informations sur cette per"
  ],
  "prochains": [
   {
-   "h": "17:03",
-   "dest": "Versailles Château Rive Gauche"
-  },
-  {
-   "h": "17:07",
-   "dest": "Dourdan"
-  },
-  {
-   "h": "17:09",
+   "h": "17:39",
    "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
-   "h": "17:23",
+   "h": "17:46",
+   "dest": "Juvisy"
+  },
+  {
+   "h": "17:52",
+   "dest": "Dourdan"
+  },
+  {
+   "h": "17:53",
    "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],

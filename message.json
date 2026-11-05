@@ -1,107 +1,79 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-11-05T06:59:42+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-11-05T17:01:33+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
  "statut": "perturbe",
  "titre": "RER C perturbé",
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\nÀ Issy-Val-de-Seine, un trou de 21 mn est annoncé entre deux passages.",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
- "departs": {
-  "confort": null,
-  "tard": "08h28",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": true,
-  "intenable": false
- },
- "pluie_mm": 0.0,
+ "departs": null,
+ "pluie_mm": null,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 13,
-    "temp": 5,
-    "vent": 11,
-    "picto": "soleil"
-   }
+   "duree": 6,
+   "couleur": "#8a8f98"
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
-  },
-  {
-   "nom": "Passerelle Charles-de-Gaulle",
-   "ligne": null,
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 13,
-    "temp": 5,
-    "vent": 10,
-    "picto": "soleil"
-   }
-  },
-  {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "nom": "Issy-Val-de-Seine → Austerlitz",
    "ligne": "RER C",
    "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Passerelle Charles-de-Gaulle",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 8,
-    "temp": 6,
-    "vent": 9,
-    "picto": "soleil"
-   }
+   "duree": 10,
+   "couleur": "#8a8f98"
+  },
+  {
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 11,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Marche jusqu'au domicile",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 5,
+   "couleur": "#8a8f98"
   }
  ],
  "detail": [
-  "Le 05 novembre, la gare d'Invalides n'est pas desservie à partir de 11h00 jusqu'à nouvel ordre. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C. Motif : Mesures de sécurité (arrêté préfectora"
+  "La gare des Invalides n'est pas desservie jusqu'à nouvel avis. Rendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire prenant en compte cette perturbation. Pour plus d'informations sur cette per"
  ],
  "prochains": [
   {
-   "h": "06:35",
-   "dest": "Rueil-Malmaison"
+   "h": "17:39",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   },
   {
-   "h": "06:51",
-   "dest": "La Défense"
+   "h": "17:46",
+   "dest": "Juvisy"
   },
   {
-   "h": "06:56",
-   "dest": "Poissy"
+   "h": "17:52",
+   "dest": "Dourdan"
   },
   {
-   "h": "06:57",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:53",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
  "notifier": true
