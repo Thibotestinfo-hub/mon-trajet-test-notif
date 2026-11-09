@@ -1,22 +1,23 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-05T17:01:33+00:00",
+ "genere": "2026-11-09T17:02:39+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
  "statut": "perturbe",
- "titre": "RER C perturbé",
+ "titre": "RER C et RER A perturbé",
  "lignes": [
-  "RER C"
+  "RER C",
+  "RER A"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\nÀ Issy-Val-de-Seine, un trou de 21 mn est annoncé entre deux passages.",
+ "message": "RER C perturbé, et les alternatives le sont aussi.\nRER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied",
  "arbitrage": null,
- "a_confirmer": false,
- "retard_mn": 10,
+ "a_confirmer": true,
+ "retard_mn": 8,
  "departs": null,
- "pluie_mm": null,
+ "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -24,7 +25,14 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 25,
+    "temp": 11,
+    "vent": 10,
+    "picto": "nuage"
+   }
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
@@ -38,12 +46,19 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 30,
+    "temp": 10,
+    "vent": 11,
+    "picto": "nuage"
+   }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
    "ligne": "RER A",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 11,
    "couleur": "#E2231A"
   },
@@ -52,28 +67,36 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 35,
+    "temp": 10,
+    "vent": 11,
+    "picto": "nuage"
+   }
   }
  ],
  "detail": [
-  "La gare des Invalides n'est pas desservie jusqu'à nouvel avis. Rendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire prenant en compte cette perturbation. Pour plus d'informations sur cette per"
+  "Le trafic est perturbé sur l'ensemble de la ligne. Des suppressions, ralentissements ou modifications de dessertes sont à prévoir. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C. Motif : inc",
+  "Le trafic est interrompu entre Vincennes et Auber dans les 2 sens jusqu'à 19h et perturbé sur le reste de la ligne. Pour plus d'informations sur cette perturbation, consultez le fil X du RER A . Motif : malaise d'un voya"
  ],
  "prochains": [
   {
-   "h": "17:39",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "16:48",
+   "dest": "Pont du Garigliano - Hôpital Européen G. Pompidou"
   },
   {
-   "h": "17:46",
-   "dest": "Juvisy"
-  },
-  {
-   "h": "17:52",
+   "h": "16:52",
    "dest": "Dourdan"
   },
   {
-   "h": "17:53",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "17:03",
+   "dest": "Versailles Château Rive Gauche"
+  },
+  {
+   "h": "17:07",
+   "dest": "Dourdan"
   }
  ],
  "notifier": true
