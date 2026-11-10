@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-09T17:02:39+00:00",
- "jour": "2026-11-09",
+ "genere": "2026-11-10T06:58:55+00:00",
+ "jour": "2026-11-10",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1026,7 +1026,7 @@
     },
     {
      "h": "19:13",
-     "dest": "La Défense"
+     "dest": "Rueil-Malmaison"
     },
     {
      "h": "19:15",
@@ -1190,7 +1190,7 @@
     },
     {
      "h": "22:20",
-     "dest": "Rueil-Malmaison"
+     "dest": "La Défense"
     },
     {
      "h": "22:27",
@@ -1198,7 +1198,7 @@
     },
     {
      "h": "22:35",
-     "dest": "Rueil-Malmaison"
+     "dest": "La Défense"
     },
     {
      "h": "22:42",
@@ -1206,7 +1206,7 @@
     },
     {
      "h": "22:50",
-     "dest": "Rueil-Malmaison"
+     "dest": "La Défense"
     },
     {
      "h": "22:57",
@@ -1241,16 +1241,8 @@
      "dest": "La Défense"
     },
     {
-     "h": "23:53",
-     "dest": "La Défense"
-    },
-    {
      "h": "23:57",
      "dest": "Saint-Germain-en-Laye"
-    },
-    {
-     "h": "00:00",
-     "dest": "La Défense"
     },
     {
      "h": "00:04",
@@ -1265,7 +1257,7 @@
      "dest": "La Défense"
     },
     {
-     "h": "00:23",
+     "h": "00:24",
      "dest": "Saint-Germain-en-Laye"
     },
     {
@@ -1273,7 +1265,7 @@
      "dest": "La Défense"
     },
     {
-     "h": "00:35",
+     "h": "00:36",
      "dest": "Saint-Germain-en-Laye"
     },
     {
@@ -1407,10 +1399,6 @@
     {
      "h": "08:58",
      "dest": "Juvisy"
-    },
-    {
-     "h": "09:01",
-     "dest": "Bibliothèque François Mitterrand"
     },
     {
      "h": "09:07",

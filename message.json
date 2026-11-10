@@ -1,45 +1,49 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-11-09T17:02:39+00:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-11-10T06:58:55+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
- "statut": "perturbe",
- "titre": "RER C et RER A perturbé",
- "lignes": [
-  "RER C",
-  "RER A"
- ],
- "message": "RER C perturbé, et les alternatives le sont aussi.\nRER A perturbé sur votre tronçon.\n→ M1 depuis Gare de Lyon jusqu'à Bérault, puis 8 mn à pied",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
- "a_confirmer": true,
- "retard_mn": 8,
- "departs": null,
+ "a_confirmer": false,
+ "retard_mn": 0,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 25,
-    "temp": 11,
+    "mm": 0.3,
+    "prob": 35,
+    "temp": 9,
     "vent": 10,
-    "picto": "nuage"
+    "picto": "pluie"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
-   "ligne": "RER C",
-   "etat": "ko",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#E2231A"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -49,55 +53,52 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 30,
+    "prob": 60,
     "temp": 10,
-    "vent": 11,
-    "picto": "nuage"
+    "vent": 10,
+    "picto": "risque"
    }
   },
   {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
-   "etat": "ko",
-   "duree": 11,
-   "couleur": "#E2231A"
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
+   "etat": "ok",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au domicile",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 35,
+    "prob": 73,
     "temp": 10,
-    "vent": 11,
-    "picto": "nuage"
+    "vent": 8,
+    "picto": "risque"
    }
   }
  ],
- "detail": [
-  "Le trafic est perturbé sur l'ensemble de la ligne. Des suppressions, ralentissements ou modifications de dessertes sont à prévoir. Pour plus d'informations sur cette perturbation, consultez le fil X du RER C. Motif : inc",
-  "Le trafic est interrompu entre Vincennes et Auber dans les 2 sens jusqu'à 19h et perturbé sur le reste de la ligne. Pour plus d'informations sur cette perturbation, consultez le fil X du RER A . Motif : malaise d'un voya"
- ],
+ "detail": [],
  "prochains": [
   {
-   "h": "16:48",
-   "dest": "Pont du Garigliano - Hôpital Européen G. Pompidou"
+   "h": "07:00",
+   "dest": "Rueil-Malmaison"
   },
   {
-   "h": "16:52",
-   "dest": "Dourdan"
+   "h": "07:02",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "17:03",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "07:04",
+   "dest": "Cergy le Haut"
   },
   {
-   "h": "17:07",
-   "dest": "Dourdan"
+   "h": "07:06",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
- "notifier": true
+ "notifier": false
 }

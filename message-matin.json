@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-09T06:59:06+00:00",
+ "genere": "2026-11-10T06:58:55+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -31,11 +31,11 @@
    "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 53,
-    "temp": 5,
-    "vent": 5,
-    "picto": "risque"
+    "mm": 0.3,
+    "prob": 35,
+    "temp": 9,
+    "vent": 10,
+    "picto": "pluie"
    }
   },
   {
@@ -53,10 +53,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 43,
-    "temp": 6,
-    "vent": 5,
-    "picto": "nuage"
+    "prob": 60,
+    "temp": 10,
+    "vent": 10,
+    "picto": "risque"
    }
   },
   {
@@ -74,30 +74,30 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 45,
-    "temp": 6,
-    "vent": 5,
-    "picto": "nuage"
+    "prob": 73,
+    "temp": 10,
+    "vent": 8,
+    "picto": "risque"
    }
   }
  ],
  "detail": [],
  "prochains": [
   {
-   "h": "06:57",
-   "dest": "Poissy"
-  },
-  {
-   "h": "06:59",
+   "h": "07:00",
    "dest": "Rueil-Malmaison"
   },
   {
-   "h": "07:00",
+   "h": "07:02",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:03",
+   "h": "07:04",
    "dest": "Cergy le Haut"
+  },
+  {
+   "h": "07:06",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
  "notifier": false
