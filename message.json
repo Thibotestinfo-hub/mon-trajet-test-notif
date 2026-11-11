@@ -1,10 +1,10 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-11-11T06:59:47+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-11-11T17:00:03+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
  "statut": "normal",
  "titre": "Trafic normal",
@@ -13,37 +13,30 @@
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
- "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 13,
-    "vent": 8,
+    "prob": 3,
+    "temp": 14,
+    "vent": 7,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
    "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -53,30 +46,30 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
+    "prob": 3,
     "temp": 13,
-    "vent": 8,
+    "vent": 6,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 13,
-    "vent": 9,
+    "temp": 12,
+    "vent": 4,
     "picto": "soleil"
    }
   }
@@ -84,20 +77,20 @@
  "detail": [],
  "prochains": [
   {
-   "h": "06:31",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:00",
+   "dest": "Juvisy"
   },
   {
-   "h": "06:35",
-   "dest": "Rueil-Malmaison"
+   "h": "17:06",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "06:38",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:09",
+   "dest": "Invalides"
   },
   {
-   "h": "06:42",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:15",
+   "dest": "Juvisy"
   }
  ],
  "notifier": false

@@ -1,20 +1,20 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-10T17:03:14+00:00",
+ "genere": "2026-11-11T17:00:03+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "pluie",
- "titre": "Pluie sur la passerelle",
+ "statut": "normal",
+ "titre": "Trafic normal",
  "lignes": [],
- "message": "Pluie annoncée sur la passerelle : 2,3 mm.",
+ "message": "",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
  "departs": null,
- "pluie_mm": 2.3,
+ "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -24,11 +24,11 @@
    "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 1.4,
-    "prob": null,
-    "temp": 13,
-    "vent": 8,
-    "picto": "averse"
+    "mm": 0.0,
+    "prob": 3,
+    "temp": 14,
+    "vent": 7,
+    "picto": "soleil"
    }
   },
   {
@@ -41,15 +41,15 @@
   {
    "nom": "Passerelle Charles-de-Gaulle",
    "ligne": null,
-   "etat": "pluie",
+   "etat": "ok",
    "duree": 10,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 2.3,
-    "prob": null,
+    "mm": 0.0,
+    "prob": 3,
     "temp": 13,
-    "vent": 8,
-    "picto": "averse"
+    "vent": 6,
+    "picto": "soleil"
    }
   },
   {
@@ -66,32 +66,32 @@
    "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 2.6,
-    "prob": null,
+    "mm": 0.0,
+    "prob": 0,
     "temp": 12,
-    "vent": 6,
-    "picto": "averse"
+    "vent": 4,
+    "picto": "soleil"
    }
   }
  ],
  "detail": [],
  "prochains": [
   {
-   "h": "17:02",
+   "h": "17:00",
    "dest": "Juvisy"
   },
   {
-   "h": "17:04",
+   "h": "17:06",
    "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "17:08",
-   "dest": "Dourdan"
+   "h": "17:09",
+   "dest": "Invalides"
   },
   {
-   "h": "17:11",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "17:15",
+   "dest": "Juvisy"
   }
  ],
- "notifier": true
+ "notifier": false
 }
