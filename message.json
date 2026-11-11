@@ -1,97 +1,104 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-11-10T17:03:14+00:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-11-11T06:59:47+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
- "statut": "pluie",
- "titre": "Pluie sur la passerelle",
+ "statut": "normal",
+ "titre": "Trafic normal",
  "lignes": [],
- "message": "Pluie annoncée sur la passerelle : 2,3 mm.",
+ "message": "",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
- "departs": null,
- "pluie_mm": 2.3,
+ "departs": {
+  "confort": "08h23",
+  "tard": "08h38",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": false,
+  "intenable": false
+ },
+ "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 1.4,
-    "prob": null,
+    "mm": 0.0,
+    "prob": 0,
     "temp": 13,
     "vent": 8,
-    "picto": "averse"
+    "picto": "soleil"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Passerelle Charles-de-Gaulle",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 0,
+    "temp": 13,
+    "vent": 8,
+    "picto": "soleil"
+   }
+  },
+  {
+   "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
    "etat": "ok",
    "duree": 19,
    "couleur": "#FFCE00"
   },
   {
-   "nom": "Passerelle Charles-de-Gaulle",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
-   "etat": "pluie",
-   "duree": 10,
+   "etat": "ok",
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 2.3,
-    "prob": null,
+    "mm": 0.0,
+    "prob": 0,
     "temp": 13,
-    "vent": 8,
-    "picto": "averse"
-   }
-  },
-  {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 11,
-   "couleur": "#E2231A"
-  },
-  {
-   "nom": "Marche jusqu'au domicile",
-   "ligne": null,
-   "etat": "ok",
-   "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 2.6,
-    "prob": null,
-    "temp": 12,
-    "vent": 6,
-    "picto": "averse"
+    "vent": 9,
+    "picto": "soleil"
    }
   }
  ],
  "detail": [],
  "prochains": [
   {
-   "h": "17:02",
-   "dest": "Juvisy"
+   "h": "06:31",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "17:04",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "06:35",
+   "dest": "Rueil-Malmaison"
   },
   {
-   "h": "17:08",
-   "dest": "Dourdan"
+   "h": "06:38",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "17:11",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "h": "06:42",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
- "notifier": true
+ "notifier": false
 }
