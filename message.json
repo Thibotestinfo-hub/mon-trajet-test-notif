@@ -1,42 +1,51 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-11-11T17:00:03+00:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-11-12T06:58:52+00:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
- "departs": null,
+ "retard_mn": 10,
+ "departs": {
+  "confort": null,
+  "tard": "08h28",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": true,
+  "intenable": false
+ },
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
-    "temp": 14,
-    "vent": 7,
+    "prob": 0,
+    "temp": 8,
+    "vent": 14,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
-   "ligne": "RER C",
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 10,
+   "couleur": "#E2231A"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -47,51 +56,53 @@
    "meteo": {
     "mm": 0.0,
     "prob": 3,
-    "temp": 13,
-    "vent": 6,
+    "temp": 9,
+    "vent": 13,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 11,
-   "couleur": "#E2231A"
+   "nom": "Austerlitz → Issy-Val-de-Seine",
+   "ligne": "RER C",
+   "etat": "ko",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
-   "nom": "Marche jusqu'au domicile",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 12,
-    "vent": 4,
+    "temp": 9,
+    "vent": 10,
     "picto": "soleil"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "Les gares de Savigny-sur-Orge, Épinay-sur-Orge, Ste-Geneviève-Bois et Saint-Michel-sur-Orge en direction de Brétigny ne sont pas desservies toute la journée du jeudi 12 novembre. Rendez-vous sur la rubrique \"Recherche It"
+ ],
  "prochains": [
   {
-   "h": "17:00",
-   "dest": "Juvisy"
+   "h": "06:59",
+   "dest": "Rueil-Malmaison"
   },
   {
-   "h": "17:06",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "07:01",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "17:09",
-   "dest": "Invalides"
+   "h": "07:03",
+   "dest": "Poissy"
   },
   {
-   "h": "17:15",
-   "dest": "Juvisy"
+   "h": "07:06",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
- "notifier": false
+ "notifier": true
 }
