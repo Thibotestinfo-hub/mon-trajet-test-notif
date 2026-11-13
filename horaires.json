@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-12T16:59:30+00:00",
- "jour": "2026-11-12",
+ "genere": "2026-11-13T06:58:39+00:00",
+ "jour": "2026-11-13",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1190,7 +1190,7 @@
     },
     {
      "h": "22:20",
-     "dest": "La Défense"
+     "dest": "Rueil-Malmaison"
     },
     {
      "h": "22:27",
@@ -1198,7 +1198,7 @@
     },
     {
      "h": "22:35",
-     "dest": "La Défense"
+     "dest": "Rueil-Malmaison"
     },
     {
      "h": "22:42",
@@ -1206,7 +1206,7 @@
     },
     {
      "h": "22:50",
-     "dest": "La Défense"
+     "dest": "Rueil-Malmaison"
     },
     {
      "h": "22:57",
@@ -1382,7 +1382,7 @@
     },
     {
      "h": "08:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "08:43",
@@ -1394,7 +1394,7 @@
     },
     {
      "h": "08:52",
-     "dest": "Dourdan la Forêt"
+     "dest": "Dourdan"
     },
     {
      "h": "08:58",
@@ -1406,7 +1406,7 @@
     },
     {
      "h": "09:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "09:13",
@@ -1430,7 +1430,7 @@
     },
     {
      "h": "09:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "09:44",
@@ -1446,7 +1446,7 @@
     },
     {
      "h": "10:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "10:13",
@@ -1458,7 +1458,7 @@
     },
     {
      "h": "10:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "10:43",
@@ -1470,7 +1470,7 @@
     },
     {
      "h": "11:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "11:13",
@@ -1482,7 +1482,7 @@
     },
     {
      "h": "11:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "11:43",
@@ -1494,7 +1494,7 @@
     },
     {
      "h": "12:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "12:13",
@@ -1506,7 +1506,7 @@
     },
     {
      "h": "12:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "12:43",
@@ -1518,7 +1518,7 @@
     },
     {
      "h": "13:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "13:13",
@@ -1530,7 +1530,7 @@
     },
     {
      "h": "13:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "13:43",
@@ -1542,7 +1542,7 @@
     },
     {
      "h": "14:07",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "14:13",
@@ -1554,7 +1554,7 @@
     },
     {
      "h": "14:37",
-     "dest": "Étampes"
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "14:43",
@@ -1647,6 +1647,10 @@
     {
      "h": "17:27",
      "dest": "Saint-Martin d'Étampes"
+    },
+    {
+     "h": "17:31",
+     "dest": "Juvisy"
     },
     {
      "h": "17:37",

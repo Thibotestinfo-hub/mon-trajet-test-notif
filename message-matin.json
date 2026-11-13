@@ -1,26 +1,24 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-12T06:58:52+00:00",
+ "genere": "2026-11-13T06:58:39+00:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "perturbe",
- "titre": "RER C perturbé",
- "lignes": [
-  "RER C"
- ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
+ "statut": "normal",
+ "titre": "Trafic normal",
+ "lignes": [],
+ "message": "",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 10,
+ "retard_mn": 0,
  "departs": {
-  "confort": null,
-  "tard": "08h28",
+  "confort": "08h23",
+  "tard": "08h38",
   "cible_confort": "09h15",
   "cible_tard": "09h30",
-  "confort_perdu": true,
+  "confort_perdu": false,
   "intenable": false
  },
  "pluie_mm": 0.0,
@@ -35,8 +33,8 @@
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 8,
-    "vent": 14,
+    "temp": 5,
+    "vent": 10,
     "picto": "soleil"
    }
   },
@@ -55,16 +53,16 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
-    "temp": 9,
-    "vent": 13,
+    "prob": 0,
+    "temp": 6,
+    "vent": 8,
     "picto": "soleil"
    }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "ko",
+   "etat": "ok",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -77,26 +75,24 @@
    "meteo": {
     "mm": 0.0,
     "prob": 0,
-    "temp": 9,
-    "vent": 10,
+    "temp": 5,
+    "vent": 6,
     "picto": "soleil"
    }
   }
  ],
- "detail": [
-  "Les gares de Savigny-sur-Orge, Épinay-sur-Orge, Ste-Geneviève-Bois et Saint-Michel-sur-Orge en direction de Brétigny ne sont pas desservies toute la journée du jeudi 12 novembre. Rendez-vous sur la rubrique \"Recherche It"
- ],
+ "detail": [],
  "prochains": [
   {
    "h": "06:59",
    "dest": "Rueil-Malmaison"
   },
   {
-   "h": "07:01",
+   "h": "07:03",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:03",
+   "h": "07:04",
    "dest": "Poissy"
   },
   {
@@ -104,5 +100,5 @@
    "dest": "Saint-Germain-en-Laye"
   }
  ],
- "notifier": true
+ "notifier": false
 }
