@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-13T06:58:39+00:00",
+ "genere": "2026-11-16T06:58:47+00:00",
  "plage": [
   "08h15",
   "08h40"
@@ -32,10 +32,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 5,
-    "vent": 10,
-    "picto": "soleil"
+    "prob": 53,
+    "temp": 11,
+    "vent": 14,
+    "picto": "risque"
    }
   },
   {
@@ -53,10 +53,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 6,
-    "vent": 8,
-    "picto": "soleil"
+    "prob": 60,
+    "temp": 11,
+    "vent": 14,
+    "picto": "risque"
    }
   },
   {
@@ -74,29 +74,29 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 0,
-    "temp": 5,
-    "vent": 6,
-    "picto": "soleil"
+    "prob": 55,
+    "temp": 11,
+    "vent": 15,
+    "picto": "risque"
    }
   }
  ],
  "detail": [],
  "prochains": [
   {
-   "h": "06:59",
-   "dest": "Rueil-Malmaison"
-  },
-  {
-   "h": "07:03",
+   "h": "06:58",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:04",
+   "h": "07:00",
    "dest": "Poissy"
   },
   {
-   "h": "07:06",
+   "h": "07:01",
+   "dest": "Neuilly-Plaisance"
+  },
+  {
+   "h": "07:04",
    "dest": "Saint-Germain-en-Laye"
   }
  ],

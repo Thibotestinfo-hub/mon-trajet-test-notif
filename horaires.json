@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-13T16:59:54+00:00",
- "jour": "2026-11-13",
+ "genere": "2026-11-16T06:58:47+00:00",
+ "jour": "2026-11-16",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1026,7 +1026,7 @@
     },
     {
      "h": "19:13",
-     "dest": "Rueil-Malmaison"
+     "dest": "La Défense"
     },
     {
      "h": "19:15",
@@ -1150,7 +1150,7 @@
     },
     {
      "h": "21:12",
-     "dest": "Cergy le Haut"
+     "dest": "Poissy"
     },
     {
      "h": "21:17",
@@ -1158,7 +1158,7 @@
     },
     {
      "h": "21:22",
-     "dest": "Poissy"
+     "dest": "Cergy le Haut"
     },
     {
      "h": "21:30",
@@ -1166,7 +1166,7 @@
     },
     {
      "h": "21:37",
-     "dest": "Sartrouville"
+     "dest": "Poissy"
     },
     {
      "h": "21:45",
@@ -1174,7 +1174,7 @@
     },
     {
      "h": "21:52",
-     "dest": "Poissy"
+     "dest": "Sartrouville"
     },
     {
      "h": "21:58",
@@ -1182,7 +1182,7 @@
     },
     {
      "h": "22:05",
-     "dest": "Rueil-Malmaison"
+     "dest": "Poissy"
     },
     {
      "h": "22:12",
@@ -1190,7 +1190,7 @@
     },
     {
      "h": "22:20",
-     "dest": "Rueil-Malmaison"
+     "dest": "Sartrouville"
     },
     {
      "h": "22:27",
@@ -1198,7 +1198,7 @@
     },
     {
      "h": "22:35",
-     "dest": "Rueil-Malmaison"
+     "dest": "Poissy"
     },
     {
      "h": "22:42",
@@ -1206,7 +1206,7 @@
     },
     {
      "h": "22:50",
-     "dest": "Rueil-Malmaison"
+     "dest": "Sartrouville"
     },
     {
      "h": "22:57",
@@ -1214,7 +1214,7 @@
     },
     {
      "h": "23:05",
-     "dest": "La Défense"
+     "dest": "Poissy"
     },
     {
      "h": "23:12",
@@ -1222,7 +1222,7 @@
     },
     {
      "h": "23:20",
-     "dest": "La Défense"
+     "dest": "Sartrouville"
     },
     {
      "h": "23:27",
@@ -1230,7 +1230,7 @@
     },
     {
      "h": "23:35",
-     "dest": "La Défense"
+     "dest": "Poissy"
     },
     {
      "h": "23:42",
@@ -1238,6 +1238,10 @@
     },
     {
      "h": "23:50",
+     "dest": "Sartrouville"
+    },
+    {
+     "h": "23:53",
      "dest": "La Défense"
     },
     {
@@ -1245,8 +1249,12 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "00:04",
+     "h": "00:00",
      "dest": "La Défense"
+    },
+    {
+     "h": "00:04",
+     "dest": "Poissy"
     },
     {
      "h": "00:10",
@@ -1254,23 +1262,23 @@
     },
     {
      "h": "00:16",
-     "dest": "La Défense"
+     "dest": "Sartrouville"
     },
     {
-     "h": "00:23",
+     "h": "00:24",
      "dest": "Saint-Germain-en-Laye"
     },
     {
      "h": "00:31",
-     "dest": "La Défense"
+     "dest": "Poissy"
     },
     {
-     "h": "00:35",
+     "h": "00:36",
      "dest": "Saint-Germain-en-Laye"
     },
     {
      "h": "00:46",
-     "dest": "La Défense"
+     "dest": "Sartrouville"
     },
     {
      "h": "00:53",
@@ -1394,7 +1402,7 @@
     },
     {
      "h": "08:52",
-     "dest": "Dourdan"
+     "dest": "Dourdan la Forêt"
     },
     {
      "h": "08:58",
@@ -1787,6 +1795,10 @@
     {
      "h": "22:13",
      "dest": "Juvisy"
+    },
+    {
+     "h": "22:44",
+     "dest": "Javel"
     },
     {
      "h": "23:07",
