@@ -1,104 +1,101 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-11-16T06:58:47+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-11-16T16:59:49+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\n   15 mn à pied sous la pluie : prenez un parapluie, ou patientez au bureau.\nPluie annoncée sur la passerelle : 0,6 mm.",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
- "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
- "pluie_mm": 0.0,
+ "retard_mn": 10,
+ "departs": null,
+ "pluie_mm": 0.6,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
-   "ligne": null,
-   "etat": "ok",
-   "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 53,
-    "temp": 11,
-    "vent": 14,
-    "picto": "risque"
-   }
-  },
-  {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
-  },
-  {
-   "nom": "Passerelle Charles-de-Gaulle",
-   "ligne": null,
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 60,
-    "temp": 11,
-    "vent": 14,
-    "picto": "risque"
-   }
-  },
-  {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
-   "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
-  },
-  {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
    "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 55,
+    "mm": 0.3,
+    "prob": 80,
+    "temp": 12,
+    "vent": 11,
+    "picto": "pluie"
+   }
+  },
+  {
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "ko",
+   "duree": 19,
+   "couleur": "#FFCE00"
+  },
+  {
+   "nom": "Passerelle Charles-de-Gaulle",
+   "ligne": null,
+   "etat": "pluie",
+   "duree": 10,
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.6,
+    "prob": 90,
+    "temp": 12,
+    "vent": 11,
+    "picto": "pluie"
+   }
+  },
+  {
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 11,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Marche jusqu'au domicile",
+   "ligne": null,
+   "etat": "ok",
+   "duree": 5,
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.8,
+    "prob": 90,
     "temp": 11,
-    "vent": 15,
-    "picto": "risque"
+    "vent": 10,
+    "picto": "pluie"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "Le mardi 17 novembre, les gares d'Invalides et de Paris-Austerlitz sont fermées à partir de 11h, pour mesure de sécurité. Les trains ne desservent plus ces gares. Avant de vous rendre en gare, nous vous recommandons de v"
+ ],
  "prochains": [
   {
-   "h": "06:58",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:01",
+   "dest": "Juvisy"
   },
   {
-   "h": "07:00",
-   "dest": "Poissy"
+   "h": "17:03",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "07:01",
-   "dest": "Neuilly-Plaisance"
+   "h": "17:09",
+   "dest": "Dourdan"
   },
   {
-   "h": "07:04",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:10",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
- "notifier": false
+ "notifier": true
 }
