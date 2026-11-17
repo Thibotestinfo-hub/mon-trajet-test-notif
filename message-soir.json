@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-16T16:59:49+00:00",
+ "genere": "2026-11-17T16:59:37+00:00",
  "plage": [
   "18h15",
   "19h45"
@@ -11,12 +11,12 @@
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\n   15 mn à pied sous la pluie : prenez un parapluie, ou patientez au bureau.\nPluie annoncée sur la passerelle : 0,6 mm.",
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes\n   15 mn à pied sous la pluie : prenez un parapluie, ou patientez au bureau.\nPluie annoncée sur la passerelle : 2,1 mm.",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
  "departs": null,
- "pluie_mm": 0.6,
+ "pluie_mm": 2.1,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -26,11 +26,11 @@
    "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.3,
-    "prob": 80,
-    "temp": 12,
-    "vent": 11,
-    "picto": "pluie"
+    "mm": 1.2,
+    "prob": 73,
+    "temp": 15,
+    "vent": 30,
+    "picto": "averse"
    }
   },
   {
@@ -47,11 +47,11 @@
    "duree": 10,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.6,
-    "prob": 90,
-    "temp": 12,
-    "vent": 11,
-    "picto": "pluie"
+    "mm": 2.1,
+    "prob": 80,
+    "temp": 15,
+    "vent": 28,
+    "picto": "averse"
    }
   },
   {
@@ -68,16 +68,16 @@
    "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.8,
-    "prob": 90,
-    "temp": 11,
-    "vent": 10,
-    "picto": "pluie"
+    "mm": 3.0,
+    "prob": 93,
+    "temp": 14,
+    "vent": 27,
+    "picto": "averse"
    }
   }
  ],
  "detail": [
-  "Le mardi 17 novembre, les gares d'Invalides et de Paris-Austerlitz sont fermées à partir de 11h, pour mesure de sécurité. Les trains ne desservent plus ces gares. Avant de vous rendre en gare, nous vous recommandons de v"
+  "Le mardi 17 novembre, la gare d'Invalides est fermée à partir de 11h00, pour mesure de sécurité. Les trains ne desservent plus cette gare. Avant de vous rendre en gare, nous vous recommandons de vérifier l’horaire de vot"
  ],
  "prochains": [
   {
@@ -85,11 +85,11 @@
    "dest": "Juvisy"
   },
   {
-   "h": "17:03",
+   "h": "17:04",
    "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "17:09",
+   "h": "17:07",
    "dest": "Dourdan"
   },
   {
