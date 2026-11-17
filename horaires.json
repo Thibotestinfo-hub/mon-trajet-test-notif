@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-16T16:59:49+00:00",
- "jour": "2026-11-16",
+ "genere": "2026-11-17T06:58:30+00:00",
+ "jour": "2026-11-17",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -347,10 +347,6 @@
     {
      "h": "09:30",
      "dest": "Poissy"
-    },
-    {
-     "h": "09:33",
-     "dest": "Rueil-Malmaison"
     },
     {
      "h": "09:36",
@@ -1261,10 +1257,6 @@
      "dest": "Saint-Germain-en-Laye"
     },
     {
-     "h": "00:16",
-     "dest": "Sartrouville"
-    },
-    {
      "h": "00:24",
      "dest": "Saint-Germain-en-Laye"
     },
@@ -1417,10 +1409,6 @@
      "dest": "Saint-Martin d'Étampes"
     },
     {
-     "h": "09:13",
-     "dest": "Juvisy"
-    },
-    {
      "h": "09:16",
      "dest": "Bibliothèque François Mitterrand"
     },
@@ -1431,10 +1419,6 @@
     {
      "h": "09:28",
      "dest": "Juvisy"
-    },
-    {
-     "h": "09:31",
-     "dest": "Bibliothèque François Mitterrand"
     },
     {
      "h": "09:37",

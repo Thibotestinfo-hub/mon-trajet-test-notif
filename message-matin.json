@@ -1,27 +1,29 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-16T06:58:47+00:00",
+ "genere": "2026-11-17T06:58:30+00:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
- "arbitrage": null,
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine\n\nPluie annoncée sur la passerelle : 0,6 mm, 88 % de risque.\n→ RER A poussée jusqu'à Châtelet, RER B jusqu'à Saint-Michel-Notre-Dame, puis RER C. La passerelle est évitée. Le B est bondé quand il pleut.",
+ "arbitrage": "10 mn sous la pluie, ou un B chargé.",
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
+  "confort": null,
+  "tard": "08h28",
   "cible_confort": "09h15",
   "cible_tard": "09h30",
-  "confort_perdu": false,
+  "confort_perdu": true,
   "intenable": false
  },
- "pluie_mm": 0.0,
+ "pluie_mm": 0.6,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -31,11 +33,11 @@
    "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 53,
-    "temp": 11,
-    "vent": 14,
-    "picto": "risque"
+    "mm": 0.3,
+    "prob": 90,
+    "temp": 15,
+    "vent": 28,
+    "picto": "pluie"
    }
   },
   {
@@ -48,21 +50,21 @@
   {
    "nom": "Passerelle Charles-de-Gaulle",
    "ligne": null,
-   "etat": "ok",
+   "etat": "pluie",
    "duree": 10,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 60,
-    "temp": 11,
-    "vent": 14,
-    "picto": "risque"
+    "mm": 0.6,
+    "prob": 88,
+    "temp": 15,
+    "vent": 27,
+    "picto": "pluie"
    }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -73,32 +75,34 @@
    "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 55,
-    "temp": 11,
-    "vent": 15,
-    "picto": "risque"
+    "mm": 0.4,
+    "prob": 85,
+    "temp": 16,
+    "vent": 28,
+    "picto": "pluie"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "Le mardi 17 novembre, la gare d'Invalides est fermée à partir de 11h, pour mesure de sécurité. Les trains ne desservent plus cette gare. Avant de vous rendre en gare, nous vous recommandons de vérifier l’horaire de votre"
+ ],
  "prochains": [
   {
-   "h": "06:58",
-   "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "07:00",
+   "h": "06:59",
    "dest": "Poissy"
   },
   {
-   "h": "07:01",
-   "dest": "Neuilly-Plaisance"
+   "h": "07:00",
+   "dest": "Rueil-Malmaison"
   },
   {
-   "h": "07:04",
+   "h": "07:03",
    "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "07:05",
+   "dest": "Cergy le Haut"
   }
  ],
- "notifier": false
+ "notifier": true
 }
