@@ -1,20 +1,22 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-18T17:01:41+00:00",
+ "genere": "2026-11-19T17:02:01+00:00",
  "plage": [
   "18h15",
   "19h45"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
- "lignes": [],
- "message": "",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": null,
- "pluie_mm": null,
+ "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -22,12 +24,19 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": null,
+    "temp": 12,
+    "vent": 20,
+    "picto": "soleil"
+   }
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -36,7 +45,14 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": null,
+    "temp": 12,
+    "vent": 20,
+    "picto": "soleil"
+   }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
@@ -50,27 +66,36 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": null,
+    "temp": 12,
+    "vent": 20,
+    "picto": "soleil"
+   }
   }
  ],
- "detail": [],
+ "detail": [
+  "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame. Motif : travaux de rénovation."
+ ],
  "prochains": [
   {
-   "h": "17:01",
+   "h": "17:02",
    "dest": "Juvisy"
+  },
+  {
+   "h": "17:02",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
    "h": "17:07",
    "dest": "Dourdan"
   },
   {
-   "h": "17:07",
-   "dest": "Versailles Château Rive Gauche"
-  },
-  {
-   "h": "17:12",
+   "h": "17:10",
    "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
- "notifier": false
+ "notifier": true
 }

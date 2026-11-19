@@ -1,49 +1,44 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-11-19T07:00:52+00:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-11-19T17:02:01+00:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
- "statut": "amont",
- "titre": "Passages espacés",
- "lignes": [],
- "message": "À Vincennes RER, un trou de 30 mn est annoncé entre deux passages.",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
- "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": false,
-  "intenable": false
- },
+ "retard_mn": 10,
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 10,
-    "temp": 10,
-    "vent": 21,
+    "prob": null,
+    "temp": 12,
+    "vent": 20,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "ko",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -53,51 +48,53 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 20,
-    "temp": 11,
-    "vent": 21,
+    "prob": null,
+    "temp": 12,
+    "vent": 20,
     "picto": "soleil"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
    "etat": "ok",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 10,
-    "temp": 11,
-    "vent": 22,
+    "prob": null,
+    "temp": 12,
+    "vent": 20,
     "picto": "soleil"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame. Motif : travaux de rénovation."
+ ],
  "prochains": [
   {
-   "h": "06:33",
-   "dest": "Charles de Gaulle - Étoile"
+   "h": "17:02",
+   "dest": "Juvisy"
   },
   {
-   "h": "07:03",
-   "dest": "Cergy le Haut"
+   "h": "17:02",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "07:04",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:07",
+   "dest": "Dourdan"
   },
   {
-   "h": "07:07",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "17:10",
+   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
   }
  ],
  "notifier": true
