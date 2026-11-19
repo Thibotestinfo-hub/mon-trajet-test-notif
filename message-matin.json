@@ -1,15 +1,15 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-18T06:58:20+00:00",
+ "genere": "2026-11-19T07:00:52+00:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "normal",
- "titre": "Trafic normal",
+ "statut": "amont",
+ "titre": "Passages espacés",
  "lignes": [],
- "message": "",
+ "message": "À Vincennes RER, un trou de 30 mn est annoncé entre deux passages.",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 0,
@@ -32,10 +32,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 43,
-    "temp": 13,
-    "vent": 22,
-    "picto": "nuage"
+    "prob": 10,
+    "temp": 10,
+    "vent": 21,
+    "picto": "soleil"
    }
   },
   {
@@ -53,10 +53,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 40,
-    "temp": 13,
-    "vent": 22,
-    "picto": "nuage"
+    "prob": 20,
+    "temp": 11,
+    "vent": 21,
+    "picto": "soleil"
    }
   },
   {
@@ -74,9 +74,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 23,
-    "temp": 13,
-    "vent": 24,
+    "prob": 10,
+    "temp": 11,
+    "vent": 22,
     "picto": "soleil"
    }
   }
@@ -84,21 +84,21 @@
  "detail": [],
  "prochains": [
   {
-   "h": "06:57",
-   "dest": "Poissy"
+   "h": "06:33",
+   "dest": "Charles de Gaulle - Étoile"
   },
   {
-   "h": "07:02",
-   "dest": "Rueil-Malmaison"
+   "h": "07:03",
+   "dest": "Cergy le Haut"
   },
   {
    "h": "07:04",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:04",
-   "dest": "Cergy le Haut"
+   "h": "07:07",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
- "notifier": false
+ "notifier": true
 }
