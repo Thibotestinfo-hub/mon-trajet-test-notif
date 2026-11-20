@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-19T17:02:01+00:00",
- "jour": "2026-11-19",
+ "genere": "2026-11-20T08:00:26+01:00",
+ "jour": "2026-11-20",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1287,6 +1287,10 @@
     {
      "h": "05:15",
      "dest": "Juvisy"
+    },
+    {
+     "h": "05:37",
+     "dest": "Saint-Martin d'Étampes"
     },
     {
      "h": "05:45",

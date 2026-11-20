@@ -1,24 +1,26 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-19T07:00:52+00:00",
+ "genere": "2026-11-20T08:00:26+01:00",
  "plage": [
   "08h15",
   "08h40"
  ],
- "statut": "amont",
- "titre": "Passages espacés",
- "lignes": [],
- "message": "À Vincennes RER, un trou de 30 mn est annoncé entre deux passages.",
+ "statut": "perturbe",
+ "titre": "RER C perturbé",
+ "lignes": [
+  "RER C"
+ ],
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 0,
+ "retard_mn": 10,
  "departs": {
-  "confort": "08h23",
-  "tard": "08h38",
+  "confort": null,
+  "tard": "08h28",
   "cible_confort": "09h15",
   "cible_tard": "09h30",
-  "confort_perdu": false,
+  "confort_perdu": true,
   "intenable": false
  },
  "pluie_mm": 0.0,
@@ -32,9 +34,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 10,
-    "temp": 10,
-    "vent": 21,
+    "prob": 15,
+    "temp": 12,
+    "vent": 22,
     "picto": "soleil"
    }
   },
@@ -54,15 +56,15 @@
    "meteo": {
     "mm": 0.0,
     "prob": 20,
-    "temp": 11,
-    "vent": 21,
+    "temp": 12,
+    "vent": 22,
     "picto": "soleil"
    }
   },
   {
    "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
-   "etat": "ok",
+   "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
@@ -75,29 +77,31 @@
    "meteo": {
     "mm": 0.0,
     "prob": 10,
-    "temp": 11,
+    "temp": 12,
     "vent": 22,
     "picto": "soleil"
    }
   }
  ],
- "detail": [],
+ "detail": [
+  "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame. Motif : travaux de rénovation."
+ ],
  "prochains": [
   {
-   "h": "06:33",
-   "dest": "Charles de Gaulle - Étoile"
+   "h": "08:01",
+   "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:03",
+   "h": "08:03",
    "dest": "Cergy le Haut"
   },
   {
-   "h": "07:04",
+   "h": "08:06",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:07",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "08:08",
+   "dest": "Poissy"
   }
  ],
  "notifier": true
