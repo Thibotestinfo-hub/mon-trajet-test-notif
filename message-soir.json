@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-20T18:01:42+01:00",
+ "genere": "2026-11-23T18:01:25+01:00",
  "plage": [
   "18h15",
   "19h45"
@@ -60,20 +60,20 @@
  ],
  "prochains": [
   {
-   "h": "17:37",
-   "dest": "Dourdan"
-  },
-  {
-   "h": "17:47",
-   "dest": "Invalides"
-  },
-  {
    "h": "17:52",
    "dest": "Dourdan"
   },
   {
-   "h": "17:57",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "18:01",
+   "dest": "Juvisy"
+  },
+  {
+   "h": "18:03",
+   "dest": "Versailles Château Rive Gauche"
+  },
+  {
+   "h": "18:07",
+   "dest": "Dourdan"
   }
  ],
  "notifier": true
