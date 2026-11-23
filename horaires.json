@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-20T18:01:42+01:00",
- "jour": "2026-11-20",
+ "genere": "2026-11-23T07:58:26+01:00",
+ "jour": "2026-11-23",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1026,7 +1026,7 @@
     },
     {
      "h": "19:13",
-     "dest": "Rueil-Malmaison"
+     "dest": "La Défense"
     },
     {
      "h": "19:15",
@@ -1241,8 +1241,16 @@
      "dest": "Sartrouville"
     },
     {
+     "h": "23:53",
+     "dest": "La Défense"
+    },
+    {
      "h": "23:57",
      "dest": "Saint-Germain-en-Laye"
+    },
+    {
+     "h": "00:00",
+     "dest": "La Défense"
     },
     {
      "h": "00:04",

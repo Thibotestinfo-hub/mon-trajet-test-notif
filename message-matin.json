@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-20T08:00:26+01:00",
+ "genere": "2026-11-23T07:58:26+01:00",
  "plage": [
   "08h15",
   "08h40"
@@ -34,9 +34,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 15,
-    "temp": 12,
-    "vent": 22,
+    "prob": 5,
+    "temp": 3,
+    "vent": 11,
     "picto": "soleil"
    }
   },
@@ -55,9 +55,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 20,
-    "temp": 12,
-    "vent": 22,
+    "prob": 3,
+    "temp": 4,
+    "vent": 12,
     "picto": "soleil"
    }
   },
@@ -76,9 +76,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 10,
-    "temp": 12,
-    "vent": 22,
+    "prob": 3,
+    "temp": 4,
+    "vent": 10,
     "picto": "soleil"
    }
   }
@@ -88,20 +88,20 @@
  ],
  "prochains": [
   {
-   "h": "08:01",
+   "h": "07:58",
    "dest": "Saint-Germain-en-Laye"
+  },
+  {
+   "h": "07:59",
+   "dest": "Poissy"
   },
   {
    "h": "08:03",
-   "dest": "Cergy le Haut"
-  },
-  {
-   "h": "08:06",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "08:08",
-   "dest": "Poissy"
+   "h": "08:05",
+   "dest": "Cergy le Haut"
   }
  ],
  "notifier": true
