@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-23T18:01:25+01:00",
+ "genere": "2026-11-24T18:00:13+01:00",
  "plage": [
   "18h15",
   "19h45"
@@ -16,7 +16,7 @@
  "a_confirmer": false,
  "retard_mn": 10,
  "departs": null,
- "pluie_mm": null,
+ "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -24,7 +24,14 @@
    "ligne": null,
    "etat": "ok",
    "duree": 6,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 25,
+    "temp": 6,
+    "vent": 13,
+    "picto": "nuage"
+   }
   },
   {
    "nom": "Issy-Val-de-Seine → Austerlitz",
@@ -38,7 +45,14 @@
    "ligne": null,
    "etat": "ok",
    "duree": 10,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 25,
+    "temp": 6,
+    "vent": 13,
+    "picto": "nuage"
+   }
   },
   {
    "nom": "Gare de Lyon → Vincennes",
@@ -52,28 +66,35 @@
    "ligne": null,
    "etat": "ok",
    "duree": 5,
-   "couleur": "#8a8f98"
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.0,
+    "prob": 23,
+    "temp": 5,
+    "vent": 12,
+    "picto": "soleil"
+   }
   }
  ],
  "detail": [
-  "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame. Motif : travaux de rénovation."
+  "Période : toute la journée Dates : du lundi 14 septembre au samedi 19 décembre 2026. La gare de Saint-Michel du métro 4 n'est pas desservie. Motif : travaux de modernisation de la gare"
  ],
  "prochains": [
-  {
-   "h": "17:52",
-   "dest": "Dourdan"
-  },
   {
    "h": "18:01",
    "dest": "Juvisy"
   },
   {
-   "h": "18:03",
+   "h": "18:02",
    "dest": "Versailles Château Rive Gauche"
   },
   {
    "h": "18:07",
    "dest": "Dourdan"
+  },
+  {
+   "h": "18:12",
+   "dest": "Saint-Martin d'Étampes"
   }
  ],
  "notifier": true

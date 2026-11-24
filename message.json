@@ -1,51 +1,44 @@
 {
- "moment": "matin",
- "libelle": "Domicile → Bureau",
- "genere": "2026-11-24T07:58:55+01:00",
+ "moment": "soir",
+ "libelle": "Bureau → Domicile",
+ "genere": "2026-11-24T18:00:13+01:00",
  "plage": [
-  "08h15",
-  "08h40"
+  "18h15",
+  "19h45"
  ],
  "statut": "perturbe",
  "titre": "RER C perturbé",
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
+ "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
  "arbitrage": null,
  "a_confirmer": false,
  "retard_mn": 10,
- "departs": {
-  "confort": null,
-  "tard": "08h28",
-  "cible_confort": "09h15",
-  "cible_tard": "09h30",
-  "confort_perdu": true,
-  "intenable": false
- },
+ "departs": null,
  "pluie_mm": 0.0,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Vincennes RER",
+   "nom": "Marche jusqu'à Issy-Val-de-Seine",
    "ligne": null,
    "etat": "ok",
-   "duree": 5,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 68,
-    "temp": 4,
-    "vent": 9,
-    "picto": "risque"
+    "prob": 25,
+    "temp": 6,
+    "vent": 13,
+    "picto": "nuage"
    }
   },
   {
-   "nom": "Vincennes → Gare de Lyon",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 10,
-   "couleur": "#E2231A"
+   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "ligne": "RER C",
+   "etat": "ko",
+   "duree": 19,
+   "couleur": "#FFCE00"
   },
   {
    "nom": "Passerelle Charles-de-Gaulle",
@@ -55,53 +48,53 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 70,
-    "temp": 4,
-    "vent": 9,
-    "picto": "risque"
+    "prob": 25,
+    "temp": 6,
+    "vent": 13,
+    "picto": "nuage"
    }
   },
   {
-   "nom": "Austerlitz → Issy-Val-de-Seine",
-   "ligne": "RER C",
-   "etat": "ko",
-   "duree": 19,
-   "couleur": "#FFCE00"
+   "nom": "Gare de Lyon → Vincennes",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 11,
+   "couleur": "#E2231A"
   },
   {
-   "nom": "Marche jusqu'au bureau",
+   "nom": "Marche jusqu'au domicile",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 75,
-    "temp": 4,
-    "vent": 9,
-    "picto": "risque"
+    "prob": 23,
+    "temp": 5,
+    "vent": 12,
+    "picto": "soleil"
    }
   }
  ],
  "detail": [
-  "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame. Motif : travaux de rénovation."
+  "Période : toute la journée Dates : du lundi 14 septembre au samedi 19 décembre 2026. La gare de Saint-Michel du métro 4 n'est pas desservie. Motif : travaux de modernisation de la gare"
  ],
  "prochains": [
   {
-   "h": "07:58",
-   "dest": "Le Vésinet - Le Pecq"
+   "h": "18:01",
+   "dest": "Juvisy"
   },
   {
-   "h": "08:00",
-   "dest": "Saint-Germain-en-Laye"
+   "h": "18:02",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "08:00",
-   "dest": "Poissy"
+   "h": "18:07",
+   "dest": "Dourdan"
   },
   {
-   "h": "08:03",
-   "dest": "Rueil-Malmaison"
+   "h": "18:12",
+   "dest": "Saint-Martin d'Étampes"
   }
  ],
  "notifier": true
