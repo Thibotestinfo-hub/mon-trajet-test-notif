@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-23T07:58:26+01:00",
+ "genere": "2026-11-24T07:58:55+01:00",
  "plage": [
   "08h15",
   "08h40"
@@ -34,10 +34,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 5,
-    "temp": 3,
-    "vent": 11,
-    "picto": "soleil"
+    "prob": 68,
+    "temp": 4,
+    "vent": 9,
+    "picto": "risque"
    }
   },
   {
@@ -55,10 +55,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
+    "prob": 70,
     "temp": 4,
-    "vent": 12,
-    "picto": "soleil"
+    "vent": 9,
+    "picto": "risque"
    }
   },
   {
@@ -76,10 +76,10 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 3,
+    "prob": 75,
     "temp": 4,
-    "vent": 10,
-    "picto": "soleil"
+    "vent": 9,
+    "picto": "risque"
    }
   }
  ],
@@ -89,19 +89,19 @@
  "prochains": [
   {
    "h": "07:58",
+   "dest": "Le Vésinet - Le Pecq"
+  },
+  {
+   "h": "08:00",
    "dest": "Saint-Germain-en-Laye"
   },
   {
-   "h": "07:59",
+   "h": "08:00",
    "dest": "Poissy"
   },
   {
    "h": "08:03",
-   "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "08:05",
-   "dest": "Cergy le Haut"
+   "dest": "Rueil-Malmaison"
   }
  ],
  "notifier": true
