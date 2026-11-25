@@ -1,78 +1,85 @@
 {
- "moment": "soir",
- "libelle": "Bureau → Domicile",
- "genere": "2026-11-24T18:00:13+01:00",
+ "moment": "matin",
+ "libelle": "Domicile → Bureau",
+ "genere": "2026-11-25T07:58:36+01:00",
  "plage": [
-  "18h15",
-  "19h45"
+  "08h15",
+  "08h40"
  ],
  "statut": "perturbe",
  "titre": "RER C perturbé",
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
- "arbitrage": null,
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine\n\nPluie annoncée sur la passerelle : 0,6 mm, 83 % de risque.\n→ RER A poussée jusqu'à Châtelet, RER B jusqu'à Saint-Michel-Notre-Dame, puis RER C. La passerelle est évitée. Le B est bondé quand il pleut.",
+ "arbitrage": "10 mn sous la pluie, ou un B chargé.",
  "a_confirmer": false,
  "retard_mn": 10,
- "departs": null,
- "pluie_mm": 0.0,
+ "departs": {
+  "confort": null,
+  "tard": "08h28",
+  "cible_confort": "09h15",
+  "cible_tard": "09h30",
+  "confort_perdu": true,
+  "intenable": false
+ },
+ "pluie_mm": 0.6,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
-   "nom": "Marche jusqu'à Issy-Val-de-Seine",
+   "nom": "Marche jusqu'à Vincennes RER",
    "ligne": null,
    "etat": "ok",
-   "duree": 6,
+   "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 25,
-    "temp": 6,
-    "vent": 13,
-    "picto": "nuage"
+    "mm": 0.9,
+    "prob": 70,
+    "temp": 3,
+    "vent": 7,
+    "picto": "pluie"
    }
   },
   {
-   "nom": "Issy-Val-de-Seine → Austerlitz",
+   "nom": "Vincennes → Gare de Lyon",
+   "ligne": "RER A",
+   "etat": "ok",
+   "duree": 10,
+   "couleur": "#E2231A"
+  },
+  {
+   "nom": "Passerelle Charles-de-Gaulle",
+   "ligne": null,
+   "etat": "pluie",
+   "duree": 10,
+   "couleur": "#8a8f98",
+   "meteo": {
+    "mm": 0.6,
+    "prob": 83,
+    "temp": 4,
+    "vent": 7,
+    "picto": "pluie"
+   }
+  },
+  {
+   "nom": "Austerlitz → Issy-Val-de-Seine",
    "ligne": "RER C",
    "etat": "ko",
    "duree": 19,
    "couleur": "#FFCE00"
   },
   {
-   "nom": "Passerelle Charles-de-Gaulle",
+   "nom": "Marche jusqu'au bureau",
    "ligne": null,
    "etat": "ok",
-   "duree": 10,
+   "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 25,
-    "temp": 6,
-    "vent": 13,
-    "picto": "nuage"
-   }
-  },
-  {
-   "nom": "Gare de Lyon → Vincennes",
-   "ligne": "RER A",
-   "etat": "ok",
-   "duree": 11,
-   "couleur": "#E2231A"
-  },
-  {
-   "nom": "Marche jusqu'au domicile",
-   "ligne": null,
-   "etat": "ok",
-   "duree": 5,
-   "couleur": "#8a8f98",
-   "meteo": {
-    "mm": 0.0,
-    "prob": 23,
-    "temp": 5,
-    "vent": 12,
-    "picto": "soleil"
+    "mm": 1.0,
+    "prob": 85,
+    "temp": 4,
+    "vent": 7,
+    "picto": "averse"
    }
   }
  ],
@@ -81,20 +88,20 @@
  ],
  "prochains": [
   {
-   "h": "18:01",
-   "dest": "Juvisy"
+   "h": "07:52",
+   "dest": "Noisiel"
   },
   {
-   "h": "18:02",
-   "dest": "Versailles Château Rive Gauche"
+   "h": "07:59",
+   "dest": "Poissy"
   },
   {
-   "h": "18:07",
-   "dest": "Dourdan"
+   "h": "08:01",
+   "dest": "Rueil-Malmaison"
   },
   {
-   "h": "18:12",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "08:03",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
  "notifier": true

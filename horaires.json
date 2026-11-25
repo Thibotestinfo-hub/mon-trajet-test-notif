@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-24T18:00:13+01:00",
- "jour": "2026-11-24",
+ "genere": "2026-11-25T07:58:36+01:00",
+ "jour": "2026-11-25",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -63,10 +63,6 @@
     {
      "h": "06:29",
      "dest": "Cergy le Haut"
-    },
-    {
-     "h": "06:29",
-     "dest": "Saint-Germain-en-Laye"
     },
     {
      "h": "06:32",
@@ -1411,10 +1407,6 @@
     {
      "h": "08:58",
      "dest": "Juvisy"
-    },
-    {
-     "h": "09:01",
-     "dest": "Bibliothèque François Mitterrand"
     },
     {
      "h": "09:07",

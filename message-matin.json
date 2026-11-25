@@ -1,7 +1,7 @@
 {
  "moment": "matin",
  "libelle": "Domicile → Bureau",
- "genere": "2026-11-24T07:58:55+01:00",
+ "genere": "2026-11-25T07:58:36+01:00",
  "plage": [
   "08h15",
   "08h40"
@@ -11,8 +11,8 @@
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine",
- "arbitrage": null,
+ "message": "RER C perturbé sur votre tronçon.\n→ T2 jusqu'à Issy-Val-de-Seine\n\nPluie annoncée sur la passerelle : 0,6 mm, 83 % de risque.\n→ RER A poussée jusqu'à Châtelet, RER B jusqu'à Saint-Michel-Notre-Dame, puis RER C. La passerelle est évitée. Le B est bondé quand il pleut.",
+ "arbitrage": "10 mn sous la pluie, ou un B chargé.",
  "a_confirmer": false,
  "retard_mn": 10,
  "departs": {
@@ -23,7 +23,7 @@
   "confort_perdu": true,
   "intenable": false
  },
- "pluie_mm": 0.0,
+ "pluie_mm": 0.6,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
  "segments": [
   {
@@ -33,11 +33,11 @@
    "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 68,
-    "temp": 4,
-    "vent": 9,
-    "picto": "risque"
+    "mm": 0.9,
+    "prob": 70,
+    "temp": 3,
+    "vent": 7,
+    "picto": "pluie"
    }
   },
   {
@@ -50,15 +50,15 @@
   {
    "nom": "Passerelle Charles-de-Gaulle",
    "ligne": null,
-   "etat": "ok",
+   "etat": "pluie",
    "duree": 10,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 70,
+    "mm": 0.6,
+    "prob": 83,
     "temp": 4,
-    "vent": 9,
-    "picto": "risque"
+    "vent": 7,
+    "picto": "pluie"
    }
   },
   {
@@ -75,33 +75,33 @@
    "duree": 6,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 75,
+    "mm": 1.0,
+    "prob": 85,
     "temp": 4,
-    "vent": 9,
-    "picto": "risque"
+    "vent": 7,
+    "picto": "averse"
    }
   }
  ],
  "detail": [
-  "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame. Motif : travaux de rénovation."
+  "Période : toute la journée Dates : du lundi 14 septembre au samedi 19 décembre 2026. La gare de Saint-Michel du métro 4 n'est pas desservie. Motif : travaux de modernisation de la gare"
  ],
  "prochains": [
   {
-   "h": "07:58",
-   "dest": "Le Vésinet - Le Pecq"
+   "h": "07:52",
+   "dest": "Noisiel"
   },
   {
-   "h": "08:00",
-   "dest": "Saint-Germain-en-Laye"
-  },
-  {
-   "h": "08:00",
+   "h": "07:59",
    "dest": "Poissy"
   },
   {
-   "h": "08:03",
+   "h": "08:01",
    "dest": "Rueil-Malmaison"
+  },
+  {
+   "h": "08:03",
+   "dest": "Saint-Germain-en-Laye"
   }
  ],
  "notifier": true
