@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-24T18:00:13+01:00",
+ "genere": "2026-11-25T18:00:09+01:00",
  "plage": [
   "18h15",
   "19h45"
@@ -27,9 +27,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 25,
-    "temp": 6,
-    "vent": 13,
+    "prob": 35,
+    "temp": 5,
+    "vent": 7,
     "picto": "nuage"
    }
   },
@@ -48,9 +48,9 @@
    "couleur": "#8a8f98",
    "meteo": {
     "mm": 0.0,
-    "prob": 25,
+    "prob": 30,
     "temp": 6,
-    "vent": 13,
+    "vent": 8,
     "picto": "nuage"
    }
   },
@@ -68,11 +68,11 @@
    "duree": 5,
    "couleur": "#8a8f98",
    "meteo": {
-    "mm": 0.0,
-    "prob": 23,
-    "temp": 5,
-    "vent": 12,
-    "picto": "soleil"
+    "mm": 0.4,
+    "prob": 43,
+    "temp": 6,
+    "vent": 9,
+    "picto": "pluie"
    }
   }
  ],
@@ -81,20 +81,20 @@
  ],
  "prochains": [
   {
-   "h": "18:01",
-   "dest": "Juvisy"
+   "h": "17:58",
+   "dest": "Saint-Martin d'Étampes"
   },
   {
    "h": "18:02",
-   "dest": "Versailles Château Rive Gauche"
+   "dest": "Juvisy"
   },
   {
    "h": "18:07",
-   "dest": "Dourdan"
+   "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "18:12",
-   "dest": "Saint-Martin d'Étampes"
+   "h": "18:11",
+   "dest": "Dourdan"
   }
  ],
  "notifier": true
