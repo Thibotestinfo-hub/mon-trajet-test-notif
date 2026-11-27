@@ -1,7 +1,7 @@
 {
  "moment": "soir",
  "libelle": "Bureau → Domicile",
- "genere": "2026-11-26T18:01:27+01:00",
+ "genere": "2026-11-27T18:00:57+01:00",
  "plage": [
   "18h15",
   "19h45"
@@ -11,10 +11,10 @@
  "lignes": [
   "RER C"
  ],
- "message": "RER C perturbé sur votre tronçon.\n→ 15 mn à pied jusqu'à Mairie d'Issy, M12 jusqu'à Saint-Lazare, puis RER A jusqu'à Vincennes",
+ "message": "RER C perturbé, et les alternatives le sont aussi.\nÀ Issy-Val-de-Seine, un trou de 30 mn est annoncé entre deux passages.",
  "arbitrage": null,
  "a_confirmer": false,
- "retard_mn": 10,
+ "retard_mn": 0,
  "departs": null,
  "pluie_mm": null,
  "meteo_source": "Météo-France AROME 1,5 km, pas de 15 mn",
@@ -60,20 +60,20 @@
  ],
  "prochains": [
   {
-   "h": "18:02",
-   "dest": "Juvisy"
-  },
-  {
-   "h": "18:05",
+   "h": "17:32",
    "dest": "Versailles Château Rive Gauche"
   },
   {
-   "h": "18:09",
-   "dest": "Dourdan"
+   "h": "18:01",
+   "dest": "Juvisy"
+  },
+  {
+   "h": "18:02",
+   "dest": "Versailles Château Rive Gauche"
   },
   {
    "h": "18:10",
-   "dest": "Saint-Quentin en Yvelines - Montigny-le-Bretonneux"
+   "dest": "Dourdan"
   }
  ],
  "notifier": true
