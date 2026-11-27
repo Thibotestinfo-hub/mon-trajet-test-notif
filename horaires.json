@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-26T18:01:27+01:00",
- "jour": "2026-11-26",
+ "genere": "2026-11-27T07:58:47+01:00",
+ "jour": "2026-11-27",
  "arrets": {
   "matin": {
    "libelle": "Vincennes RER",
@@ -1367,10 +1367,6 @@
     {
      "h": "08:13",
      "dest": "Juvisy"
-    },
-    {
-     "h": "08:16",
-     "dest": "Bibliothèque François Mitterrand"
     },
     {
      "h": "08:22",
